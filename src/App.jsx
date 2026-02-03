@@ -16,7 +16,10 @@ function App() {
   return (
     <Router>
       {/* Navbar will show on all pages */}
-      <Navbar />
+      <div className="container">
+        <Navbar />
+      </div>
+      
 
       {/* Page Routes */}
       <Routes>

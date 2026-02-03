@@ -94,7 +94,7 @@ body {
 
 .container {
   max-width: 1400px;   /* professional content width */
-  margin: 0 auto;  /*center me rakhne ke liye */
+  margin: 2px auto;  /*center me rakhne ke liye */
   
   /* padding: 0 20px;      left-right breathing space */
 }

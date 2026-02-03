@@ -1,4 +1,6 @@
 .cert-section {
+  max-width: 1400px;   /* professional content width */
+  margin: 0 auto;
   background: #F4F0ED;
   padding-top: 20px;
   padding-bottom: 70px;
