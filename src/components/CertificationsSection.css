@@ -1,0 +1,69 @@
+.cert-section {
+  background: #F4F0ED;
+  padding-top: 20px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+/* ---------- Certification Cards ---------- */
+
+.cert-cards {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.cert-card {
+  width: 125px;
+  height: 115px;
+  background: #ffffff;
+  border: 2px solid #bfdbfe;
+  /* border-radius: 8px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+.cert-card img {
+  width: 110px;
+  height: auto;
+}
+
+.cert-card .cert-img2 {
+  width: 90px;
+  height: auto;
+}
+
+.cert-card .cert-img {
+  margin-top: 12px;
+  width: 130px;
+  height: 80px;
+}
+
+.cert-card .cert-img {
+  margin-top: 12px;
+  width: 130px;
+  height: 80px;
+}
+
+.cert-card .cert-img1 {
+  width: 120px;
+  /* height: 80px; */
+}
+
+
+
+/* ---------- Flags Row ---------- */
+
+.flags-row {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.flags-row img {
+  width: 45px;
+  height: 30px;   /* exact size based on your screenshot */
+}

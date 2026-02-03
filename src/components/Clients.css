@@ -1,0 +1,63 @@
+/* OUTER WRAPPER */
+.clients-wrapper {
+  display: flex;
+  justify-content: center;
+  /* padding: 30px 0; */
+  /* width: 1400px; */
+  background: #EFF6FF; 
+  padding: 50px 40px;
+  margin-top: 40px;
+}
+
+/* MAIN BOX */
+.clients-container {
+  width: 900px;
+  padding: 50px 40px;
+  /* border-radius: 10px; */
+  text-align: center;
+}
+
+/* HEADING */
+.clients-container h2 {
+  color: #4B8FDD;
+  /* color: #1a1a1a; */
+  font-family: "Inter", "Source Sans 3", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+/* LOGO GRID (RESPONSIVE) */
+.logos-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);  /* 5 per row */
+  gap: 10px;
+  justify-items: center;
+}
+
+/* INDIVIDUAL LOGO CARD */
+.logo-card {
+  width: 133px;
+  height: 114px;
+  background: #ffffff;
+  border: 1px solid #d4dff2;
+  /* border-radius: 8px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  transition: 0.3s;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.06);
+}
+
+.logo-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 7px 15px rgba(0,0,0,0.12);
+}
+
+/* LOGO IMAGE */
+.logo-card img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}

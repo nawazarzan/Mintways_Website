@@ -1,0 +1,29 @@
+.banner {
+  width: 1400px;
+  height: 260px;
+  margin: 0 auto;
+  position: relative;
+  border: 1px solid #dbeafe;
+  /* border-radius: 12px; */
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom;   /* 👈 car always visible */
+  filter: brightness(65%);
+}
+
+.banner-text {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}

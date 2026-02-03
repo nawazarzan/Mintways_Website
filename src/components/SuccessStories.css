@@ -1,0 +1,81 @@
+/* Section */
+.success-section {
+  background: #F5F5FA;
+  padding: 70px 0;
+  margin-top: 40px;
+  font-family: "Inter", "Source Sans 3", "Roboto", "Helvetica Neue", Arial, sans-serif;
+
+}
+
+/* Heading */
+.title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: #4B8FDD;
+  margin-bottom: 50px;
+
+}
+
+/* Content Width (Figma) */
+.content-wrapper {
+  width: 996px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Card */
+.card {
+  width: 319.57px;
+  background: #fff;
+  /* border-radius: 0px; */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+/* .why-card .p {
+  font-size: 1px;
+  line-height: 1.55;
+  margin: 0;
+  color: #333;
+} */
+
+
+/* Image Container EXACT SIZE */
+.img-box {
+  width: 260.57px;
+  height: 250.76px;
+  margin: 25px auto;     /* Center the image */
+}
+
+/* Image Styling */
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7); /* 0.7 = 30% darker */
+}
+
+
+/* Title */
+.card h3 {
+  font-family: "Inter", "Source Sans 3", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  padding: 20px 15px;
+  font-size: 16px;
+  font-weight: 600;
+  height: 80px;
+}
+
+/* Button */
+.card button {
+  margin-top: -12px;
+  background: #347BEF;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 30px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
