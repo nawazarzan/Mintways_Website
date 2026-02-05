@@ -1,0 +1,150 @@
+.section {
+  padding: 80px 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 42px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: auto;
+  color: #64748b;
+  /* margin:50px; */
+}
+
+.bg-muted {
+  background: #f1f5f9;
+  margin:35px
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.service-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.service-icon {
+  width: 48px;
+  height: 48px;
+  background: #eef2ff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2563eb;
+}
+
+.badge {
+  background: #e0f2fe;
+  color: #0284c7;
+  padding: 6px 12px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.product-block {
+  margin-top: 60px;
+}
+
+.product-row {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 100px;
+}
+
+.product-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.product-text {
+  flex: 1;
+  text-align: left;
+}
+
+.product-text h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.product-text p {
+  color: #64748b;
+  margin-bottom: 15px;
+}
+
+.product-text ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.product-text ul li {
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.product-text ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #2563eb;
+}
+
+.product-image {
+  flex: 1;
+}
+
+.product-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* buttons */
+.btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: #2563eb;
+  color: white;
+}
+
+.btn.green {
+  background: #16a34a;
+  color: white;
+}
+
+.btn.orange {
+  background: #ea580c;
+  color: white;
+}
+@media (max-width: 1024px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr); /* tablet: 2 per row */
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-3 {
+    grid-template-columns: 1fr; /* mobile: 1 per row */
+  }
+}
