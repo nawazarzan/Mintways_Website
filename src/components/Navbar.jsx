@@ -1,9 +1,10 @@
+
 import React, { useState } from "react";
 import "./Navbar.css";
 import { FiSearch, FiChevronDown } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 function Navbar() {
-
   const [openMenu, setOpenMenu] = useState(null);
 
   const toggleMenu = (menuName) => {
@@ -13,10 +14,11 @@ function Navbar() {
   return (
     <div className="navbar-wrapper">
       <header className="navbar">
-
         {/* LEFT SIDE LOGO */}
         <div className="logo-section">
-          <img src="/images/icon.png" className="logo-img" alt="logo" />
+          <Link to="/">
+            <img src="/images/icon.png" className="logo-img" alt="logo" />
+          </Link>
 
           <div className="logo-text">
             <h1>
@@ -31,21 +33,35 @@ function Navbar() {
           </div>
         </div>
 
-        {/* CENTER MENU (DXC-style dropdown) */}
+        {/* CENTER MENU */}
         <nav className="menu">
+          {/* HOME */}
+          <div className="menu-item">
+            <Link to="/">Home</Link>
+          </div>
+
+          {/* SERVICES */}
+          <div className="menu-item">
+            <Link to="/services">Services</Link>
+          </div>
 
           {/* INDUSTRIES */}
           <div className="menu-item">
             <button onClick={() => toggleMenu("industries")}>
-              Industries <FiChevronDown className={`arrow ${openMenu === "industries" ? "rotate" : ""}`} />
+              Industries{" "}
+              <FiChevronDown
+                className={`arrow ${
+                  openMenu === "industries" ? "rotate" : ""
+                }`}
+              />
             </button>
 
             {openMenu === "industries" && (
               <div className="dropdown">
-                <a href="#">Banking</a>
-                <a href="#">Healthcare</a>
-                <a href="#">Retail</a>
-                <a href="#">Manufacturing</a>
+                <Link to="/industries/banking">Banking</Link>
+                <Link to="/healthcare">Healthcare</Link>
+                <Link to="/industries/retail">Retail</Link>
+                <Link to="/industries/manufacturing">Manufacturing</Link>
               </div>
             )}
           </div>
@@ -53,28 +69,19 @@ function Navbar() {
           {/* PLATFORMS */}
           <div className="menu-item">
             <button onClick={() => toggleMenu("platforms")}>
-              Platforms <FiChevronDown className={`arrow ${openMenu === "platforms" ? "rotate" : ""}`} />
+              Platforms{" "}
+              <FiChevronDown
+                className={`arrow ${
+                  openMenu === "platforms" ? "rotate" : ""
+                }`}
+              />
             </button>
 
             {openMenu === "platforms" && (
               <div className="dropdown">
-                <a href="#">SAP</a>
-                <a href="#">Salesforce</a>
-                <a href="#">Cloud</a>
-              </div>
-            )}
-          </div>
-
-          {/* ADVISORY */}
-          <div className="menu-item">
-            <button onClick={() => toggleMenu("advisory")}>
-              Advisory <FiChevronDown className={`arrow ${openMenu === "advisory" ? "rotate" : ""}`} />
-            </button>
-
-            {openMenu === "advisory" && (
-              <div className="dropdown">
-                <a href="#">Strategy</a>
-                <a href="#">Digital Consulting</a>
+                <Link to="/platforms/sap">SAP</Link>
+                <Link to="/platforms/salesforce">Salesforce</Link>
+                <Link to="/platforms/cloud">Cloud</Link>
               </div>
             )}
           </div>
@@ -82,25 +89,28 @@ function Navbar() {
           {/* SOLUTIONS */}
           <div className="menu-item">
             <button onClick={() => toggleMenu("solutions")}>
-              Solutions <FiChevronDown className={`arrow ${openMenu === "solutions" ? "rotate" : ""}`} />
+              Solutions{" "}
+              <FiChevronDown
+                className={`arrow ${
+                  openMenu === "solutions" ? "rotate" : ""
+                }`}
+              />
             </button>
 
             {openMenu === "solutions" && (
               <div className="dropdown">
-                <a href="#">AI Solutions</a>
-                <a href="#">Automation</a>
-                <a href="#">Cybersecurity</a>
+                <Link to="/solutions/ai">AI Solutions</Link>
+                <Link to="/solutions/automation">Automation</Link>
+                <Link to="/solutions/security">Cybersecurity</Link>
               </div>
             )}
           </div>
-
         </nav>
 
         {/* RIGHT SEARCH */}
         <div className="search">
           <FiSearch className="search-icon" />
         </div>
-
       </header>
     </div>
   );

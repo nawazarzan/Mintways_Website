@@ -1,21 +1,16 @@
 /* WRAPPER BACKGROUND (DXC soft fade) */
-/* .navbar-wrapper {
-  background: linear-gradient(
-    to bottom,
-    #F8F5F2 0%,
-    #F8F1E9 45%,
-    #FBEEDD 100%
-  );
-} */
+.navbar-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+}
 
 /* NAVBAR MAIN CONTAINER */
 .navbar {
-  max-width: 1400px;
-  margin: 0 auto;
+  
   height: 90px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content:space-evenly;
   padding: 0 20px;
   font-family: "Inter", "Source Sans 3", "Roboto", "Helvetica Neue", Arial, sans-serif;
   /* 🔥 Make it fixed */
@@ -23,6 +18,7 @@
   top: 0;
   /* left: 0; */
   width: 100%;
+  margin-left: -80px;
 
   /* 🔥 Ensure it stays above everything */
   z-index: 999;

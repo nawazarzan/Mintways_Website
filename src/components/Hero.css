@@ -1,14 +1,15 @@
+
+
 .hero-only-image {
-  /* width: 1400px; */
+  width: 100%;
   height: 544.17px;
   margin: 0 auto;
 
-/* <-- EXACT PATH */
-  background-image: url("../images/video.png");
-  /* height: 500px; */
-  background-size: cover;
+  /* FIXED PATH — React Router compatible */
+  background-image: url("/images/video.png");
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
 }
+

@@ -1,6 +1,7 @@
 .footer {
   /* width: 1400px; */
   max-width: 1400px;
+  width: 100%;
   background: #4A90E2;   /* Blue color */
   padding: 12px 40px;
   margin: 0 auto;

@@ -1,0 +1,5 @@
+.page-layout {
+  max-width: 1400px;   /* Same as your HeroSection */
+  width: 100%;
+  margin: 0 auto;       /* Center on page */
+}

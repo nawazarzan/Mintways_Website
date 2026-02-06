@@ -1,9 +1,11 @@
+
+
 import "./Hero.css";
 
 function Hero() {
   return (
     <section className="hero-only-image">
-        {/* <img src="/images/video.png" alt="Hero" className="hero-image" /> */}
+      {/* Background image se handle ho raha hai */}
     </section>
   );
 }
