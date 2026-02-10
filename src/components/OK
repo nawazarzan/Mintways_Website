@@ -1,0 +1,53 @@
+// import React from "react";
+// import "./Navbar.css";
+// import { FiSearch } from "react-icons/fi";
+// import { FiChevronDown } from "react-icons/fi";
+
+
+// function Navbar() {
+//   return (
+//     <div className="navbar-wrapper">
+
+//       <header className="navbar">
+
+//         {/* LEFT SIDE LOGO */}
+//         <div className="logo-section">
+//           <img src="/images/icon.png" className="logo-img" alt="logo" />
+
+//           <div className="logo-text">
+//             <h1>
+//               <span className="red">MINTWAYS</span> 
+//               <span className="blue"> TECHNOLOGIES</span>
+//             </h1>
+//             <p>
+//               <span className="red">MINTING</span>
+//               <span className="blue"> SUCCESS</span>
+//               <span className="red"> ALWAYS</span>
+//             </p>
+//           </div>
+//         </div>
+
+//         {/* CENTER MENU */}
+//         <nav className="menu">
+
+          
+//           <a href="#">Industries <FiChevronDown className="arrow" /></a>
+//           <a href="#">Industries <FiChevronDown className="arrow" /></a>
+//           <a href="#">Industries <FiChevronDown className="arrow" /></a>
+//           <a href="#">Industries <FiChevronDown className="arrow" /></a>
+
+//         </nav>
+
+//         {/* RIGHT SEARCH */}
+//         <div className="search">
+//           <FiSearch className="search-icon" />
+//         </div>
+
+
+//       </header>
+
+//     </div>
+//   );
+// }
+
+// export default Navbar;
