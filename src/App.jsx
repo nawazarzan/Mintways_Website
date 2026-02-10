@@ -7,7 +7,7 @@ import Optimizing from "./pages/Optimizing";
 import Streamlining from "./pages/Streamlining";
 import "./App.css";
 import Healthcare from "./pages/Healthcare";
-im
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (

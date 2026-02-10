@@ -1,5 +1,4 @@
 
-
 import "./Hero.css";
 
 function Hero() {
