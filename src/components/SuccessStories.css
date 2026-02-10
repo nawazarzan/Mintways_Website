@@ -71,3 +71,18 @@
   border: none;
   cursor: pointer;
 }
+
+/* LINK BUTTON SAME AS ORIGINAL BUTTON */
+.readmore-btn {
+  display: inline-block;
+  margin: 0 auto 30px auto;
+  background: #347BEF;
+  color: #fff;
+  padding: 10px 30px;
+  font-size: 14px;
+  border-radius: 30px;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+}

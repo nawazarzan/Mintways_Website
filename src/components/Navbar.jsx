@@ -1,15 +1,20 @@
-
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { FiSearch, FiChevronDown } from "react-icons/fi";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Navbar() {
   const [openMenu, setOpenMenu] = useState(null);
+  const location = useLocation();
 
   const toggleMenu = (menuName) => {
     setOpenMenu(openMenu === menuName ? null : menuName);
   };
+
+  // ⭐ FIX: route change → close dropdown
+  useEffect(() => {
+    setOpenMenu(null);
+  }, [location.pathname]);
 
   return (
     <div className="navbar-wrapper">
@@ -35,12 +40,11 @@ function Navbar() {
 
         {/* CENTER MENU */}
         <nav className="menu">
-          {/* HOME */}
+
           <div className="menu-item">
             <Link to="/">Home</Link>
           </div>
 
-          {/* SERVICES */}
           <div className="menu-item">
             <Link to="/services">Services</Link>
           </div>
@@ -58,30 +62,7 @@ function Navbar() {
 
             {openMenu === "industries" && (
               <div className="dropdown">
-                <Link to="/industries/banking">Banking</Link>
                 <Link to="/healthcare">Healthcare</Link>
-                <Link to="/industries/retail">Retail</Link>
-                <Link to="/industries/manufacturing">Manufacturing</Link>
-              </div>
-            )}
-          </div>
-
-          {/* PLATFORMS */}
-          <div className="menu-item">
-            <button onClick={() => toggleMenu("platforms")}>
-              Platforms{" "}
-              <FiChevronDown
-                className={`arrow ${
-                  openMenu === "platforms" ? "rotate" : ""
-                }`}
-              />
-            </button>
-
-            {openMenu === "platforms" && (
-              <div className="dropdown">
-                <Link to="/platforms/sap">SAP</Link>
-                <Link to="/platforms/salesforce">Salesforce</Link>
-                <Link to="/platforms/cloud">Cloud</Link>
               </div>
             )}
           </div>
@@ -105,9 +86,10 @@ function Navbar() {
               </div>
             )}
           </div>
+
         </nav>
 
-        {/* RIGHT SEARCH */}
+        {/* SEARCH ICON */}
         <div className="search">
           <FiSearch className="search-icon" />
         </div>

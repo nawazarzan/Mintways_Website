@@ -1,0 +1,72 @@
+/* FILE: ProblemSolutionCard.css 
+
+/* Layout for two cards */
+.ps-two-column {
+  display: flex;
+  gap: 50px;
+}
+
+
+
+/* MAIN CARD */
+.ps-card {
+  width: 407px;
+  /* height: 600px; */
+  background: #ffffff;
+  border-radius: 25px;
+  border: 1px solid #d8d8d8;
+  padding: 20px 15px 10px 15px;
+  /* padding: 30px 15px; */
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+  font-family: "Inter", "Source Sans 3", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  margin-top: 10px;
+}
+
+/* LABEL (TOP BUTTON-STYLE) */
+.ps-card-label {
+  width: 292px;
+  height: 57px;
+  border-radius: 20px;
+  margin: 0 auto 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* ITEMS */
+.ps-item {
+  display: flex;
+  gap: 17px;
+  margin-bottom: 25px;
+}
+
+/* ICON */
+.ps-icon {
+  width: 100px;
+  /* height: 85px;   */
+  height: auto;
+  object-fit: contain;
+  margin-left: -5px;
+  margin-top: -19px;
+
+}
+
+.ps-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.ps-list {
+  padding-left: 18px;
+}
+
+.ps-list li {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #23306B;
+  line-height: 1.6;
+}

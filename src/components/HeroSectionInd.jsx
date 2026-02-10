@@ -6,8 +6,7 @@ function HeroSection() {
       
       {/* HEADING */}
       <h1 className="hero-title">
-        HEALTHCARE IT SYSTEMS, <br />
-        SERVICE AND CONSULTING
+        HEALTHCARE IT SYSTEMS, SERVICE AND CONSULTING
       </h1>
 
       {/* IMAGE BOX with gradient border */}

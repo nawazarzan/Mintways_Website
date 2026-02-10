@@ -10,11 +10,13 @@
 
 /* TITLE */
 .hero-title {
-  font-size: 42px;
-  font-weight: 900;
-  color: #1a1a1a;
+  font-size: 35px;
+  padding-top: 100px;
+  font-weight: 800;
+  color: #23306B;
   margin-bottom: 60px;
-  line-height: 1.3;
+  line-height: 1.0;
+
 }
 
 /* GRADIENT OUTER BOX (round corners + glow) */
