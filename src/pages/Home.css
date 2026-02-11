@@ -3,4 +3,5 @@
   width: 100%;
   margin: 0 auto;  
   padding-top: 100px;     /* Center on page */
+  overflow-x: hidden;
 }

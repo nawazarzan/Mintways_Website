@@ -9,7 +9,7 @@ function BannerSection() {
         Certified Excellence & Global Client Presence
       </h2>
     </div>
-  );
+  );  
 }
 
 export default BannerSection;

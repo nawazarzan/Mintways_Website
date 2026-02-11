@@ -14,6 +14,7 @@ function BusinessImpact({ title, categories }) {
         {/* Title */}
         {title && <h2 className="bi-title">{title}</h2>}
 
+        {/* ================= DESKTOP VIEW ================= */}
         {/* Header Tabs */}
         <div className="bi-header-row">
           {categories.map((cat, index) => (
@@ -36,6 +37,33 @@ function BusinessImpact({ title, categories }) {
                   <p>{cat.items[rowIndex] || ""}</p>
                 </div>
               ))}
+            </div>
+          ))}
+        </div>
+
+
+        {/* ================= MOBILE VIEW ================= */}
+        <div className="bi-mobile-view">
+          {categories.map((cat, index) => (
+            <div className="bi-mobile-block" key={index}>
+
+              {/* Category Header */}
+              <div
+                className="bi-header-card"
+                style={{ backgroundColor: cat.color, width: "100%" }}
+              >
+                {cat.title}
+              </div>
+
+              {/* Category Items */}
+              <div className="bi-mobile-rows">
+                {cat.items.map((item, i) => (
+                  <div className="bi-mobile-cell" key={i}>
+                    <p>{item}</p>
+                  </div>
+                ))}
+              </div>
+
             </div>
           ))}
         </div>

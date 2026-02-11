@@ -107,3 +107,83 @@
   align-items: center;
   gap: 10px;
 }
+
+/* ---------------- RESPONSIVE FIXES ---------------- */
+
+/* Tablet Screens */
+@media (max-width: 1024px) {
+  .clinic-cards-row {
+    gap: 40px;
+  }
+
+  .clinic-card {
+    width: 420px;
+  }
+
+  .clinic-toggle-btn {
+    padding: 8px 25px;
+    font-size: 16px;
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+  .clinic-cards-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .clinic-card {
+    width: 90%;
+  }
+
+  .clinic-card-content {
+    top: 10%;
+    left: 20px;
+  }
+
+  .clinic-card-title {
+    font-size: 16px;
+    padding: 7px 10px;
+  }
+
+  .clinic-card-content li {
+    font-size: 15px;
+  }
+
+  .clinic-toggle-row {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .clinic-toggle-btn {
+    padding: 8px 22px;
+    font-size: 16px;
+  }
+}
+
+/* Extra Small Mobile (iPhone SE/12 Mini) */
+@media (max-width: 480px) {
+  .clinic-card {
+    width: 100%;
+  }
+
+  .clinic-card-content {
+    top: 12%;
+    left: 15px;
+  }
+
+  .clinic-card-title {
+    font-size: 14px;
+  }
+
+  .clinic-card-content li {
+    font-size: 14px;
+  }
+
+  .clinic-toggle-btn {
+    padding: 7px 20px;
+    font-size: 15px;
+  }
+}

@@ -1,6 +1,6 @@
 import "./HeroSectionInd.css";
 
-function HeroSection() {
+function HeroSectionInd() {
   return (
     <section className="hero-wrapper">
       
@@ -24,5 +24,5 @@ function HeroSection() {
   );
 }
 
-export default HeroSection;
+export default HeroSectionInd;
  

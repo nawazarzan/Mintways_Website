@@ -6,7 +6,6 @@
   height: 100px;
   background: white;
   z-index: 999;
-  /* box-shadow: 0 2px 6px rgba(0,0,0,0.06); */
 }
 
 /* ⭐ INNER CONTAINER 1400px */
@@ -18,7 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;   /* Changeable without issue */
+  padding: 0 20px;
 }
 
 /* LEFT LOGO GROUP */
@@ -136,4 +135,135 @@
 
 .get-started-btn:hover {
   background: #1e4fd6;
+}
+
+/* ------------------ MOBILE DRAWER + HAMBURGER ------------------ */
+
+/* HAMBURGER BUTTON */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+/* MOBILE DRAWER */
+.mobile-drawer {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  z-index: 9999;
+  padding: 120px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  transition: 0.35s ease;
+  box-shadow: -4px 0 12px rgba(0,0,0,0.15);
+}
+
+.mobile-drawer.open {
+  right: 0;
+}
+
+.mobile-drawer a,
+.drawer-item {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111;
+  text-decoration: none;
+}
+
+.drawer-item {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+/* DROPDOWN INSIDE DRAWER */
+.drawer-dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+/* Drawer CTA Button */
+.drawer-btn {
+  background: #2563eb;
+  width: 50px;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 6px;
+  text-align: center;
+  margin-top: 25px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* ---------------- MOBILE BREAKPOINT (768px) ---------------- */
+@media (max-width: 768px) {
+
+  .menu {
+    display: none;
+  }
+
+  .get-started-btn {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /* 🔥 Perfect Center Align */
+  .mobile-drawer {
+    align-items: center;
+    text-align: center;
+  }
+
+  .mobile-drawer a,
+  .mobile-drawer button,
+  .drawer-item {
+    width: 100%;
+    display: flex !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  .drawer-dropdown a {
+    text-align: center !important;
+  }
+
+  .drawer-btn {
+    margin: 25px auto 0;
+  }
+}
+
+/* ---------------- SMALL MOBILE (550px) ---------------- */
+@media (max-width: 550px) {
+  .navbar {
+    height: 95px;
+    padding: 0 15px;
+  }
+
+  .logo-img {
+    width: 90px;
+  }
+
+  .logo-text h1 {
+    font-size: 18px;
+  }
+
+  .logo-text p {
+    font-size: 12px;
+    margin-top: -2px;
+  }
 }

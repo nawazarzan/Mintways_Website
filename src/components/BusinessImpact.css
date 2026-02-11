@@ -13,11 +13,9 @@
 }
 
 .bi-title {
-  
   text-align: center;
   font-size: 32px;
   font-weight: 800;
-  /* margin-bottom: 3px;     */
   color: #23306B;
   margin-bottom: 90px;
 }
@@ -28,7 +26,7 @@
   gap: 20px;
 }
 
-.bi-header-card {   
+.bi-header-card {
   color: #fff;
   width: 258px;
   height: 87px;
@@ -66,4 +64,90 @@
 
 .bi-cell:first-child {
   border-left: none;
+}
+
+/* -----------------------------------------
+      MOBILE VIEW (Initially Hidden)
+------------------------------------------ */
+.bi-mobile-view {
+  display: none;
+}
+
+/* ---------------------------------------------------
+      RESPONSIVE FIXES (Do NOT delete any old code)
+---------------------------------------------------- */
+
+/* Mobile & Small Tablets (768px and below) */
+@media (max-width: 768px) {
+
+  /* Hide Desktop View */
+  .bi-header-row,
+  .bi-body {
+    display: none !important;
+  }
+
+  /* Show Mobile View */
+  .bi-mobile-view {
+    display: block !important;
+    margin-top: 20px;
+  }
+
+  /* Full-width header cards */
+  .bi-header-card {
+    width: 100% !important;
+    text-align: center;
+    padding: 18px;
+    font-size: 16px;
+  }
+
+  /* Category Block container */
+  .bi-mobile-block {
+    margin-bottom: 24px;
+    background: #ffffff;
+    border-radius: 12px;
+  }
+
+  /* Items inside each category */
+  .bi-mobile-rows {
+    margin-top: 10px;
+  }
+
+  /* Each item style */
+  .bi-mobile-cell {
+    background: #f3f4ff;
+    padding: 14px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #23306B;
+    border: none;
+    text-align: center;
+
+  }
+
+  .bi-mobile-cell:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* Small Mobile Phones (480px and below) */
+@media (max-width: 480px) {
+
+  .bi-title {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .bi-header-card {
+    font-size: 14px;
+    padding: 14px;
+  }
+
+  .bi-mobile-cell {
+    font-size: 13px;
+    padding: 12px 8px;
+    text-align: center;
+
+  }
 }

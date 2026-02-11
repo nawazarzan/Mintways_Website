@@ -65,5 +65,84 @@
 
 .flags-row img {
   width: 45px;
-  height: 30px;   /* exact size based on your screenshot */
+  height: 30px;
+}
+
+/* RESPONSIVE — TABLETS */
+@media (max-width: 1024px) {
+  .cert-cards {
+    gap: 15px;
+  }
+
+  .cert-card {
+    width: 110px;
+    height: 105px;
+  }
+
+  .cert-card img {
+    width: 90px;
+  }
+
+  .flags-row img {
+    width: 40px;
+    height: 26px;
+  }
+}
+
+/* RESPONSIVE — MOBILE (Medium)*/
+@media (max-width: 768px) {
+  .cert-cards {
+    flex-wrap: wrap;       /* 2 rows */
+    gap: 15px;
+  }
+
+  .cert-card {
+    width: 45%;
+    height: 110px;
+    margin: 0 auto;
+  }
+
+  .cert-card img {
+    width: 80px;
+  }
+
+  .flags-row {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .flags-row img {
+    width: 38px;
+    height: 24px;
+  }
+}
+
+/* RESPONSIVE — SMALL MOBILE*/
+@media (max-width: 480px) {
+  .cert-cards {
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .cert-card {
+    width: 100%;
+    height: 120px;
+  }
+
+  .cert-card img {
+    width: 75px;
+  }
+
+  .flags-row {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .flags-row img {
+    width: 40px;
+    height: 22px;
+  }
 }

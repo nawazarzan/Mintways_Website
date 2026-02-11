@@ -5,7 +5,7 @@
   border: 1px solid #dbeafe;
   /* border-radius: 12px; */
   overflow: hidden;
-  margin-top: 120px;
+  margin-top: 60px;
 }
 
 .banner-img {
@@ -26,3 +26,58 @@
   font-weight: 700;
   letter-spacing: 0.4px;
 }
+
+
+/* ===========================
+   RESPONSIVE BANNER FIX
+   =========================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .banner {
+    height: 220px;
+    margin-top: 40px;
+  }
+
+  .banner-text {
+    font-size: 24px;
+    bottom: 10px;
+    padding: 0 20px;
+    text-align: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .banner {
+    height: 200px;
+    margin-top: 30px;
+  }
+
+  .banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .banner-text {
+    font-size: 20px;
+    bottom: 12px;
+    padding: 0 15px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .banner {
+    height: 170px;
+  }
+
+  .banner-text {
+    font-size: 17px;
+    bottom: 10px;
+    padding: 0 10px;
+    text-align: center;
+  }
+}
+

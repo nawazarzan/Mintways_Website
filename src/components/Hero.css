@@ -1,14 +1,27 @@
 .hero-only-image {
-  width: 1400px;
+  width: 100%;
+  max-width: 1400px;
   height: 544.17px;
   margin: 0 auto;
 
-/* <-- EXACT PATH */
+
   background-image: url("../images/video.png");
-  /* height: 500px; */
   background-size: cover;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
+}
+
+/*Mobile Responsive Fix */
+@media (max-width: 768px) {
+  .hero-only-image {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-only-image {
+    height: 220px; 
+  }
 }

@@ -21,4 +21,18 @@
   box-sizing: border-box;
 }
 
+@media (max-width: 900px) {
 
+  .two-col-layout {
+    flex-direction: column;   /* row → column */
+    gap: 30px;                /* spacing between cards */
+    padding: 40px 20px;       /* better mobile spacing */
+    align-items: center;      /* center cards */
+  }
+
+  /* Cards ko full usable width dene ke liye */
+  .two-col-layout > * {
+    width: 100%;
+    max-width: 500px;         /* controlled width */
+  }
+}

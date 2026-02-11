@@ -2,7 +2,7 @@
 .why-section {
   background: #F4F0ED;
   padding: 40px 0;
-  margin-top: 40px;
+  margin-top: 50px;
   font-family: "Inter", "Source Sans 3", "Roboto", "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -12,7 +12,7 @@
   font-size: 30px;
   font-weight: 600;
   color: #4B8FDD;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 /* Wrapper – perfect layout using GRID */
@@ -52,4 +52,36 @@
   font-size: 14px;
   color: #444;
   line-height: 1.5;
+}
+
+/*Mobile (768px): 3 → 2 columns */
+@media (max-width: 768px) {
+  .why-wrapper {
+    width: 70%;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .why-title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+}
+
+/* Small Mobile (480px): 2 → 1 column */
+@media (max-width: 480px) {
+  .why-wrapper {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    width: 90%;
+    height: 700px;
+  }
+
+  .why-card h3 {
+    font-size: 16px;
+  }
+
+  .why-card p {
+    font-size: 13px;
+  }
 }

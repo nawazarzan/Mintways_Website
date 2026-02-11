@@ -4,7 +4,7 @@
   justify-content: center;
   margin: 0 auto;
   /* padding: 30px 0; */
-  /* width: 100%; */
+  width: 100%;
   background: #EFF6FF; 
   padding: 50px 40px;
   margin-top: 40px;
@@ -13,14 +13,12 @@
 /* MAIN BOX */
 .clients-container {
   padding: 50px 40px;
-  /* border-radius: 10px; */
   text-align: center;
 }
 
 /* HEADING */
 .clients-container h2 {
   color: #4B8FDD;
-  /* color: #1a1a1a; */
   font-family: "Inter", "Source Sans 3", "Roboto", "Helvetica Neue", Arial, sans-serif;
   font-size: 26px;
   font-weight: 600;
@@ -41,7 +39,6 @@
   height: 114px;
   background: #ffffff;
   border: 1px solid #d4dff2;
-  /* border-radius: 8px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,7 +55,66 @@
 /* LOGO IMAGE */
 .logo-card img {
   width: 150px;
-  /* height: auto; */
   aspect-ratio: 3/2;
   object-fit: contain;
+}
+
+/* --------------------------------------------------
+    ⭐ RESPONSIVE BREAKPOINTS — ONLY ADDITIONS ⭐
+-------------------------------------------------- */
+
+/* ⭐ For screens below 1200px → 4 logos per row */
+@media (max-width: 1200px) {
+  .logos-grid {
+    grid-template-columns: repeat(4, 1fr); 
+  }
+}
+
+/* ⭐ For screens below 992px → 3 logos per row */
+@media (max-width: 992px) {
+  .logos-grid {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+}
+
+/* ⭐ For screens below 768px → 2 logos per row */
+@media (max-width: 768px) {
+  .clients-wrapper {
+    padding: 40px 20px; 
+  }
+
+  .clients-container {
+    padding: 30px 20px; 
+  }
+
+  .clients-container h2 {
+    font-size: 22px;    
+  }
+
+  .logos-grid {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 16px;                              
+  }
+
+  .logo-card {
+    width: 150px;        
+    height: 100px;       
+    padding: 12px;       
+  }
+
+  .logo-card img {
+    width: 120px;       
+  }
+}
+
+/* ⭐ For small mobile screens below 480px → 1 logo per row */
+@media (max-width: 480px) {
+  .logos-grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .logo-card {
+    width: 200px;
+    margin: 0 auto; 
+  }
 }
