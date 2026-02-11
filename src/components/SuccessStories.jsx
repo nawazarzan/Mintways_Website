@@ -1,4 +1,5 @@
 import "./SuccessStories.css";
+import { Link } from "react-router-dom";
 
 function SuccessStories() {
   return (
@@ -12,7 +13,10 @@ function SuccessStories() {
             <img src="/images/doctor.png" alt="" />
           </div>
           <h3>Transforming Healthcare Operations Through Digital Efficiency</h3>
-          <button>Read More</button>
+
+          <Link to="/success/transforming" className="readmore-btn">
+            Read More
+          </Link>
         </div>
 
         <div className="card">
@@ -20,7 +24,10 @@ function SuccessStories() {
             <img src="/images/laptop.png" alt="" />
           </div>
           <h3>Optimizing Asset Visibility with Smart Tracking Solutions</h3>
-          <button>Read More</button>
+
+          <Link to="/success/optimizing" className="readmore-btn">
+            Read More
+          </Link>
         </div>
 
         <div className="card">
@@ -28,7 +35,10 @@ function SuccessStories() {
             <img src="/images/tracker.png" alt="" />
           </div>
           <h3>Streamlining Trademark & Patent Registration with Intelligent Automation</h3>
-          <button>Read More</button>
+
+          <Link to="/success/streamlining" className="readmore-btn">
+            Read More
+          </Link>
         </div>
 
       </div>

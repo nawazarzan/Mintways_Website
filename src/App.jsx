@@ -1,46 +1,30 @@
-
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-import './App.css'
-
-// Layout Components
-import Navbar from "./components/Navbar.jsx";
-import Footer from "./components/Footer.jsx";
-
-
-// Pages
-import Home from "./pages/Home.jsx";
-import Services from "./pages/Services.jsx";
-import VitalSyncDetails from "./pages/VitalSyncDetails.jsx";
-import MintCommerce from "./pages/MintCommerce.jsx";
-import GurukulSaarthi from "./pages/GurukulSaarthi.jsx";
-
-
-
-
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import SuccessTransforming from "./pages/SuccessTransforming";
+import Optimizing from "./pages/Optimizing";
+import Streamlining from "./pages/Streamlining";
+import "./App.css";
+import Healthcare from "./pages/Healthcare";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
-      {/* Navbar will show on all pages */}
-      <div className="container">
-        <Navbar />
-      </div>
-      
+      <ScrollToTop />
+      <Navbar />
 
-      {/* Page Routes */}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/vital-sync" element={<VitalSyncDetails />} />
-        <Route path="/mint-commerce" element={<MintCommerce />} />
-        <Route path="/gurukul-saarthi" element={<GurukulSaarthi />} />
+        <Route path="healthcare" element={<Healthcare />} /> 
+        <Route path="success/transforming" element={<SuccessTransforming />} /> 
+        <Route path="success/optimizing" element={<Optimizing />} />
+        <Route path="success/streamlining" element={<Streamlining />} />
 
-
+        {/* Healthcare yeh line add karney yahan par to hero mein problem arhey success mein */}
       </Routes>
 
-      {/* Footer will show on all pages */}
       <Footer />
     </Router>
   );

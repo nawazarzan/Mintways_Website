@@ -1,0 +1,109 @@
+/* Section */
+.clinic-section-uni {
+  background: #f7f5f3;
+  padding-top: 60px;
+  text-align: center;
+  font-family: Inter, sans-serif;
+  margin-top: 30px;
+  padding: 70px 0; 
+}
+
+/* Heading */
+.clinic-head .clinic-head-title {
+  margin-top: 70px;
+  text-align: center;
+}
+
+/* Title */
+.clinic-title-uni {
+  padding-top: 30px;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.clinic-title-uni span {
+  font-style: italic;
+}
+
+/* Toggle Row */
+.clinic-toggle-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.clinic-toggle-btn {
+  background: #2d72d9;
+  color: white;
+  padding: 10px 35px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.clinic-vs {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Cards Layout */
+.clinic-cards-row {
+  display: flex;
+  justify-content: center;
+  gap: 75px;
+  margin-bottom: 80px;
+}
+
+/* CARD */
+.clinic-card {
+  width: 500px;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.clinic-card-img {
+  position: relative;
+  top: 7px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.clinic-card-content {
+  position: absolute;
+  top: 5%;
+  left: 30px;
+  color: white;
+  text-align: left;
+}
+
+.clinic-card-title {
+  font-size: 18px;
+  font-weight: 700;
+  background: rgba(255, 204, 0, 0.9);
+  color: black;
+  padding: 8px 12px;
+  display: inline-block;
+  margin-top: -17px;
+  margin-bottom: 30px;
+  margin-left: -18px;
+}
+
+.clinic-card-content ul {
+  list-style: none;
+  padding: 0;
+  margin-top: -20px;
+  margin-left: -12px;
+}
+
+.clinic-card-content li {
+  font-size: 17px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

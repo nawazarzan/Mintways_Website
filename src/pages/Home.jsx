@@ -1,6 +1,5 @@
-import "./Home.css";
-
 // Import all homepage sections
+import "./Home.css";
 import HeroSection from "../components/HeroSection.jsx";
 import ClientsSection from "../components/ClientsSection.jsx";
 import SuccessStories from "../components/SuccessStories.jsx";
@@ -10,25 +9,27 @@ import CertificationsSection from "../components/CertificationsSection.jsx";
 
 function Home() {
   return (
-    <>
-      {/* Hero Section */}
+    <div className="page-layout">
+      
+      {/* Hero */}
       <HeroSection />
 
-      {/* Clients Section */}
+      {/* Clients */}
       <ClientsSection />
 
-      {/* Success Stories Section */}
+      {/* Success Stories */}
       <SuccessStories />
 
-      {/* Why Choose Mintways Section */}
+      {/* Why Choose Us */}
       <WhyChooseMintways />
 
-      {/* Banner Section */}
+      {/* Banner */}
       <BannerSection />
 
-      {/* Certifications Section */}
+      {/* Certifications */}
       <CertificationsSection />
-    </>
+
+    </div>
   );
 }
 
