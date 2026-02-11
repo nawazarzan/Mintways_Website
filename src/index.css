@@ -1,15 +1,4 @@
 
-:root{
-  /* background: linear-gradient(
-  to bottom,
-  #F8F5F2 0%,
-  /* #FFFDD0 20%, */
-  /* #c8c6c39c 20%,
-  #FBEEDD 100% */
-  /* ) */
-  /* background: #FBEEDD 50% */
-
-};
 
 *{
   padding:0;
@@ -19,9 +8,6 @@
 }
 
 
-body {
-  padding-top: 90px;
-}
 
 
 .container {

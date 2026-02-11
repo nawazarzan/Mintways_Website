@@ -2,8 +2,9 @@
 .clients-wrapper {
   display: flex;
   justify-content: center;
+  margin: 0 auto;
   /* padding: 30px 0; */
-  width: 100%;
+  /* width: 100%; */
   background: #EFF6FF; 
   padding: 50px 40px;
   margin-top: 40px;

@@ -4,7 +4,7 @@
   width: 100%;
   min-height: 100vh;
   background: #ffffff;
-  padding-top: 80px; /* space for fixed navbar */
+  padding-top: 100px;
 }
 
 /* Prevent horizontal scroll */

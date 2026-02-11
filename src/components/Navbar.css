@@ -1,32 +1,25 @@
-/* WRAPPER BACKGROUND (DXC soft fade) */
-.navbar-wrapper {
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-/* NAVBAR MAIN CONTAINER */
+/* NAVBAR BACKGROUND FULL WIDTH */
 .navbar {
-  height: 90px;
-  display: flex;
-  align-items: center;
-  justify-content:space-evenly;
-  padding: 0 20px;
-  font-family: "Inter", "Source Sans 3", "Roboto", "Helvetica Neue", Arial, sans-serif;
- 
   position: fixed;
   top: 0;
-  /* left: 0; */
   width: 100%;
-  margin-left: -80px;
-
-  /* 🔥 Ensure it stays above everything */
-  z-index: 999;
-
-  /* 🔥 Must add background (varna transparent ho jayega) */
+  height: 100px;
   background: white;
+  z-index: 999;
+  /* box-shadow: 0 2px 6px rgba(0,0,0,0.06); */
 }
 
-
+/* ⭐ INNER CONTAINER 1400px */
+.navbar-inner {
+  max-width: 1400px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;   /* Changeable without issue */
+}
 
 /* LEFT LOGO GROUP */
 .logo-section {
@@ -37,107 +30,81 @@
 
 .logo-img {
   width: 80px;
-  height: auto;
 }
 
-
-/* LOGO TEXT */
 .logo-text h1 {
   margin: 0;
-  margin-bottom: -3px;
   font-size: 22px;
-  color: #4B8FDD;
+  margin-bottom: -3px;
   font-weight: 700;
-  margin-left: -5px;
 }
 
-.logo-text .red {
-  color: #EC0E0E;
-}
-
-.logo-text .blue {
-  color: #4B8FDD;
-}
+.red { color: #EC0E0E; }
+.blue { color: #4B8FDD; }
 
 .logo-text p {
-  margin: 5px;
+  margin: 5px 0;
   font-size: 10px;
-  color: #EC0E0E;
   font-weight: 800;
-  margin-left: -7px;
+  color: #EC0E0E;
 }
 
-
-
-/* --------------------------- */
-/* CENTER MENU (DXC DROPDOWN) */
-/* --------------------------- */
-
+/* CENTER MENU */
 .menu {
   display: flex;
+  gap: 40px;
   align-items: center;
-  gap: 40px;      /* spacing between menu items */
-  margin-right: 160px;
+  justify-content: center;
+  flex: 1;
 }
 
 .menu-item {
   position: relative;
 }
 
+.menu-item a,
 .menu-item button {
-  background: none;
   border: none;
-  display: flex;
-  align-items: center;
+  background: none;
   cursor: pointer;
   font-size: 15px;
   color: #1a1a1a;
-  letter-spacing: 0.3px;
   font-weight: 500;
-  font-family: inherit;
+  text-decoration: none;
 }
 
+.menu-item a:hover,
 .menu-item button:hover {
   color: #EC0E0E;
 }
 
-
-
-/* ARROW ICON */
+/* DROPDOWN */
 .arrow {
-  font-size: 16px;
   margin-left: 6px;
-  color: #444;
-  transition: 0.3s ease;
+  transition: 0.3s;
 }
 
 .rotate {
   transform: rotate(180deg);
 }
 
-
-
-/* DROPDOWN BOX */
 .dropdown {
   position: absolute;
   top: 35px;
   left: 0;
-  background: white;
   min-width: 180px;
-  padding: 10px 0;
+  background: white;
   border-radius: 6px;
+  padding: 10px 0;
   box-shadow: 0 4px 15px rgba(0,0,0,0.12);
-  z-index: 50;
+  z-index: 1000;
 }
 
-/* INDIVIDUAL DROPDOWN LINKS */
 .dropdown a {
   display: block;
   padding: 10px 20px;
-  text-decoration: none;
   font-size: 14px;
   color: #333;
-  font-weight: 400;
 }
 
 .dropdown a:hover {
@@ -145,174 +112,16 @@
   color: #EC0E0E;
 }
 
-
-
-/* RIGHT SEARCH ICON */
-.search-icon {
-  font-size: 24px;
-  color: #4B8FDD;
-  cursor: pointer;
-}
-/* WRAPPER BACKGROUND (DXC soft fade) */
-.navbar-wrapper {
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-/* NAVBAR MAIN CONTAINER */
-.navbar {
-  
-  height: 90px;
-  display: flex;
-  align-items: center;
-  justify-content:space-evenly;
-  padding: 0 20px;
-  font-family: "Inter", "Source Sans 3", "Roboto", "Helvetica Neue", Arial, sans-serif;
-  /* 🔥 Make it fixed */
-  position: fixed;
-  top: 0;
-  /* left: 0; */
-  width: 100%;
-  margin-left: -80px;
-
-  /* 🔥 Ensure it stays above everything */
-  z-index: 999;
-
-  /* 🔥 Must add background (varna transparent ho jayega) */
-  background: white;
-}
-
-
-
-/* LEFT LOGO GROUP */
-.logo-section {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo-img {
-  width: 80px;
-  height: auto;
-}
-
-
-/* LOGO TEXT */
-.logo-text h1 {
-  margin: 0;
-  margin-bottom: -3px;
-  font-size: 22px;
-  color: #4B8FDD;
-  font-weight: 700;
-  margin-left: -5px;
-}
-
-.logo-text .red {
-  color: #EC0E0E;
-}
-
-.logo-text .blue {
-  color: #4B8FDD;
-}
-
-.logo-text p {
-  margin: 5px;
-  font-size: 10px;
-  color: #EC0E0E;
-  font-weight: 800;
-  margin-left: -7px;
-}
-
-
-
-/* --------------------------- */
-/* CENTER MENU (DXC DROPDOWN) */
-/* --------------------------- */
-
-.menu {
-  display: flex;
-  align-items: center;
-  gap: 40px;      /* spacing between menu items */
-  margin-right: 160px;
-}
-
-.menu-item {
-  position: relative;
-}
-
-.menu-item button {
-  background: none;
-  border: none;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  font-size: 15px;
-  color: #1a1a1a;
-  letter-spacing: 0.3px;
-  font-weight: 500;
-  font-family: inherit;
-}
-
-.menu-item button:hover {
-  color: #EC0E0E;
-}
-
-
-
-/* ARROW ICON */
-.arrow {
-  font-size: 16px;
-  margin-left: 6px;
-  color: #444;
-  transition: 0.3s ease;
-}
-
-.rotate {
-  transform: rotate(180deg);
-}
-
-
-
-/* DROPDOWN BOX */
-.dropdown {
-  position: absolute;
-  top: 35px;
-  left: 0;
-  background: white;
-  min-width: 180px;
-  padding: 10px 0;
-  border-radius: 6px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.12);
-  z-index: 50;
-}
-
-/* INDIVIDUAL DROPDOWN LINKS */
-.dropdown a {
-  display: block;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-size: 14px;
-  color: #333;
-  font-weight: 400;
-}
-
-.dropdown a:hover {
-  background: #F4EFEA;
-  color: #EC0E0E;
-}
-
-
-
-/* RIGHT SEARCH ICON */
-.search-icon {
-  font-size: 24px;
-  color: #4B8FDD;
-  cursor: pointer;
-}
+/* RIGHT SIDE */
 .nav-right {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+.search-icon {
+  font-size: 24px;
+  color: #4B8FDD;
 }
 
 .get-started-btn {
@@ -320,10 +129,9 @@
   color: white;
   padding: 8px 16px;
   border-radius: 6px;
-  text-decoration: none;
   font-size: 14px;
   font-weight: 500;
-  transition: 0.2s;
+  text-decoration: none;
 }
 
 .get-started-btn:hover {
