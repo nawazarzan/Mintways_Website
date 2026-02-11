@@ -1,0 +1,31 @@
+/* PAGE WRAPPER */
+.ai-landing-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+
+  /* Navbar ke niche space */
+  padding-top: 30px;
+
+  /* remove horizontal scroll */
+  overflow-x: hidden;
+}
+
+/* make sure all sections stay centered */
+.ai-landing-page .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* fix image overflow */
+.ai-landing-page img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* remove any unwanted horizontal scroll globally */
+body {
+  overflow-x: hidden;
+}

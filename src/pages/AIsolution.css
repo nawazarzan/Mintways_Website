@@ -1,0 +1,14 @@
+/* PAGE WRAPPER */
+.ai-solution-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f9fcff;
+
+  /* Navbar ke niche content lane ke liye */
+  padding-top: 90px;
+}
+
+/* Agar future sections add karo */
+.ai-solution-page section {
+  width: 100%;
+}

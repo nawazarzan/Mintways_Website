@@ -1,0 +1,34 @@
+
+:root{
+  /* background: linear-gradient(
+  to bottom,
+  #F8F5F2 0%,
+  /* #FFFDD0 20%, */
+  /* #c8c6c39c 20%,
+  #FBEEDD 100% */
+  /* ) */
+  /* background: #FBEEDD 50% */
+
+};
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: "Inter", "Source Sans 3", "Roboto", "Helvetica Neue", Arial, sans-serif;
+}
+
+
+body {
+  padding-top: 90px;
+}
+
+
+.container {
+  max-width: 1400px;   /* professional content width */
+  margin: 2px auto;  /*center me rakhne ke liye */
+  
+  /* padding: 0 20px;      left-right breathing space */
+}
+
+

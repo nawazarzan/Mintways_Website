@@ -1,0 +1,150 @@
+/* MAIN SECTION */
+.solution-hero {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative !important;
+  z-index: 10;
+}
+
+
+.solution-hero {
+  width: 100%;
+  background-color: #f9fcff;
+  padding: 80px 0;
+  font-family: "Inter", sans-serif;
+}
+
+/* CONTAINER */
+.solution-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* LEFT CONTENT */
+.solution-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.solution-badge {
+  display: inline-block;
+  background-color: #e8f1ff;
+  color: #2f6fed;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+.solution-content h1 {
+  font-size: 44px;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.solution-content p {
+  font-size: 16px;
+  color: #475569;
+  max-width: 480px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+/* BUTTONS */
+.solution-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: #0f172a;
+  border: 1px solid #d1d5db;
+  padding: 12px 26px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #f1f5f9;
+}
+
+/* RIGHT IMAGE */
+.solution-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.solution-image img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+  .solution-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .solution-image {
+    justify-content: center;
+  }
+
+  .solution-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .solution-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .solution-content h1 {
+    font-size: 32px;
+  }
+
+  .solution-content p {
+    font-size: 15px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+  }
+}

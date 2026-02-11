@@ -1,0 +1,23 @@
+/* SUCCESS PAGE WRAPPER */
+.success-layout {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: -35px;
+
+}
+
+
+/* PROBLEM + SOLUTION CARDS SECTION */
+.two-col-layout {
+  background: #FBF5F0;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 42px;
+  padding: 60px 40px;
+
+  box-sizing: border-box;
+}
+
+

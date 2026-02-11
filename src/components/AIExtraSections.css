@@ -1,0 +1,120 @@
+/* ================= AI BUILD SECTION ================= */
+
+.ai-build {
+  padding: 80px 6%;
+}
+
+.ai-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.ai-build-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.ai-build-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.ai-build-content h2 {
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.ai-build-desc {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Steps */
+.ai-steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.ai-step {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.ai-step span {
+  min-width: 32px;
+  height: 32px;
+  background: #2563eb;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* ================= WHY SECTION ================= */
+
+.ai-why {
+  padding: 80px 6%;
+  background: #f5f7fb;
+}
+
+.ai-center-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.ai-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.ai-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.ai-card h4 {
+  margin-bottom: 10px;
+}
+
+/* ================= CTA ================= */
+
+.ai-cta {
+  padding: 80px 6%;
+  text-align: center;
+}
+
+.ai-cta-content p {
+  color: #666;
+  margin: 10px 0 20px;
+}
+
+.ai-cta-btn {
+  padding: 12px 24px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+  .ai-build-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ai-grid {
+    grid-template-columns: 1fr;
+  }
+}
