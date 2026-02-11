@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function VitalSyncDetails() {
   return (
     <>
@@ -75,7 +77,7 @@ export default function VitalSyncDetails() {
               </p>
 
               <div className="vs-buttons" style={{ marginTop: "24px", display: "flex", gap: "16px" }}>
-                <button style={btnPrimary}>Start Free Trial</button>
+                <Link to="/contact"><button style={btnPrimary}>Start Free Trial</button></Link>
                 <button style={btnOutline}>View Pricing</button>
               </div>
 
@@ -87,7 +89,7 @@ export default function VitalSyncDetails() {
             </div>
 
             <img
-              src="/images/clinic-system.png"
+              src="/images/VitalSync1.png"
               alt="dashboard"
               style={{ width: "100%", borderRadius: "12px", boxShadow: "0 10px 30px rgba(0,0,0,0.1)" }}
             />
@@ -133,7 +135,7 @@ export default function VitalSyncDetails() {
         {/* DETAIL */}
         <section style={{ padding: "100px 0" }}>
           <div className="vs-detail-grid" style={{ maxWidth: "1200px", margin: "auto" }}>
-            <img src="/images/doctor.png" alt="doctor" style={{ width: "100%", borderRadius: "12px" }} />
+            <img src="/images/vitalSync2.png" alt="doctor" style={{ width: "100%", borderRadius: "12px" }} />
 
             <div>
               <h2>Focus on patients, not paperwork</h2>
@@ -160,9 +162,9 @@ export default function VitalSyncDetails() {
             <div style={{ background: "#38bdf8", color: "white", padding: "60px", borderRadius: "20px", textAlign: "center" }}>
               <h2>Ready to upgrade your practice?</h2>
               <p>Join over 12,000 healthcare providers.</p>
-              <button style={{ background: "white", color: "#0284c7", padding: "14px 30px", borderRadius: "8px", border: "none" }}>
+              <Link to="/contact"><button style={{ background: "white", color: "#0284c7", padding: "14px 30px", borderRadius: "8px", border: "none" }}>
                 Get Started for Free
-              </button>
+              </button></Link>
             </div>
           </div>
         </section>

@@ -1,5 +1,5 @@
 import "./MintCommerce.css";
-
+import { Link } from "react-router-dom";
 export default function MintCommerce() {
   return (
     <div className="mint-page">
@@ -19,7 +19,7 @@ export default function MintCommerce() {
         </p>
 
         <div className="mint-buttons">
-          <button className="btn-primary">Start Free Trial</button>
+          <Link to="/contact"><button className="btn-primary">Start Free Trial</button></Link>
           <button className="btn-outline">View Demo</button>
         </div>
       </section>
@@ -79,7 +79,7 @@ export default function MintCommerce() {
       <section className="mint-cta">
         <h2>Ready to scale your business?</h2>
         <p>Join thousands of merchants growing their revenue with Mint-Commerce.</p>
-        <button className="btn-cta">Contact Us</button>
+         <Link to="/contact"><button className="btn-cta">Contact Us</button></Link>
       </section>
 
     </div>

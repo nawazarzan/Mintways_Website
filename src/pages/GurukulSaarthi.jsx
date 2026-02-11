@@ -1,5 +1,5 @@
 import "./GurukulSaarthi.css";
-
+import { Link } from "react-router-dom";
 export default function GurukulSaarthi() {
   return (
     <div className="gurukul-page">
@@ -11,12 +11,23 @@ export default function GurukulSaarthi() {
           An intelligent, AI-enabled School ERP platform designed to modernize
           educational administration and simplify academic workflows.
         </p>
+        <div className="hero-video">
+          <iframe
+            src="https://www.youtube.com/embed/701XBqCJMnM?autoplay=1&mute=1&playsinline=1"
+            title="Gurukul Saarthi Demo"
+            frameBorder="0"
+            allow="autoplay; encrypted-media"
 
-        <img
+          ></iframe>
+        </div>
+
+
+
+        {/* <img
           src="/images/school-erp.png"
           alt="School ERP Dashboard"
           className="hero-image"
-        />
+        /> */}
       </section>
 
       {/* INFO SECTION */}
@@ -73,7 +84,7 @@ export default function GurukulSaarthi() {
           Join hundreds of institutions transforming their administration with
           Gurukul Saarthi.
         </p>
-        <button className="cta-btn">Schedule a Demo</button>
+        <Link to="/contact"><button className="cta-btn">Schedule a Demo</button></Link>
       </section>
 
     </div>

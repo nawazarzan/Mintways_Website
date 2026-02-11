@@ -154,6 +154,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+  margin-right: 69px;
 }
 
 .ai-card {
@@ -188,6 +189,31 @@
 /* Responsive */
 @media (max-width: 768px) {
   .ai-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.erp-compare {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+.erp-section {
+  text-align: center;
+  padding: 80px 20px;
+}
+.erp-compare {
+  display: grid;
+  grid-template-columns: repeat(2, 320px);
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .erp-compare {
     grid-template-columns: 1fr;
   }
 }

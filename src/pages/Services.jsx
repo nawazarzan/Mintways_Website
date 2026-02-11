@@ -1,19 +1,27 @@
+
 import "./Services.css";
 import { Icon } from "@iconify/react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export default function Services() {
   return (
     <>
+    <div className="services-page">
       {/* HERO */}
       <section className="section hero">
-        <div className="container text-center">
-          <span className="badge">Future-Ready Solutions</span>
-          <h1>Transforming Ideas into Digital Reality</h1>
-          <p>
-            We build secure, resilient, and scalable solutions using AI and
-            cloud technologies.
-          </p>
+        <div className="container hero-container">
+          <div className="hero-left">
+            <span className="badge">Future-Ready Solutions</span>
+            <h1>Transforming Ideas into Digital Reality</h1>
+            <p>
+              We build secure, resilient, and scalable solutions using AI and
+              cloud technologies.
+            </p>
+          </div>
+
+          <div className="hero-right">
+            <img src="/images/clinic-system.png" alt="Hero" />
+          </div>
         </div>
       </section>
 
@@ -26,13 +34,21 @@ export default function Services() {
             <ServiceCard
               icon="lucide:code-2"
               title="Digital Engineering"
-              items={["Web & Mobile Development", "Custom Software", "UX/UI Design"]}
+              items={[
+                "Web & Mobile Development",
+                "Custom Software",
+                "UX/UI Design",
+              ]}
             />
 
             <ServiceCard
               icon="lucide:cloud"
               title="Cloud & DevOps"
-              items={["Cloud Strategy", "CI/CD Automation", "Cloud Security"]}
+              items={[
+                "Cloud Strategy",
+                "CI/CD Automation",
+                "Cloud Security",
+              ]}
             />
 
             <ServiceCard
@@ -40,20 +56,35 @@ export default function Services() {
               title="Data & AI"
               items={["Data Analytics", "AI Solutions", "Automation"]}
             />
+
             <ServiceCard
               icon="lucide:brain-circuit"
               title="Blockchain"
-              items={["Blockchain Solution", "Smart Contracts", "Web3 Development"]}
+              items={[
+                "Blockchain Solution",
+                "Smart Contracts",
+                "Web3 Development",
+              ]}
             />
+
             <ServiceCard
               icon="lucide:warehouse"
               title="Enterprise Solutions"
-              items={["Custom Enterprise Software", "Integration Services", "Consulting"]}
+              items={[
+                "Custom Enterprise Software",
+                "Integration Services",
+                "Consulting",
+              ]}
             />
+
             <ServiceCard
               icon="lucide:headphones"
               title="Managed IT Services"
-              items={["IT Infrastructure Management", "Security Monitoring", "Support & Maintenance"]}
+              items={[
+                "IT Infrastructure Management",
+                "Security Monitoring",
+                "Support & Maintenance",
+              ]}
             />
           </div>
         </div>
@@ -76,7 +107,7 @@ export default function Services() {
                 A comprehensive AI-enabled School ERP designed to modernize
                 educational administration.
               </p>
-              <ul>
+              <ul className="tick-list">
                 <li>Automated attendance with face recognition</li>
                 <li>Smart timetables and exam scheduling</li>
                 <li>AI-powered student analytics</li>
@@ -100,13 +131,12 @@ export default function Services() {
                 Advanced Clinic & Health Management System bringing efficiency
                 to healthcare providers.
               </p>
-              <ul>
+              <ul className="tick-list">
                 <li>Secure digital patient records</li>
                 <li>Appointment scheduling and reminders</li>
                 <li>Automated billing & insurance</li>
                 <li>Doctor and staff portal</li>
               </ul>
-              {/* <button className="btn green">Learn More</button> */}
               <Link to="/vital-sync" className="btn green">
                 Learn More
               </Link>
@@ -125,7 +155,7 @@ export default function Services() {
                 Scalable eCommerce platform empowering businesses to sell
                 smarter and faster.
               </p>
-              <ul>
+              <ul className="tick-list">
                 <li>Inventory & store management</li>
                 <li>Advanced sales analytics</li>
                 <li>Loyalty & marketing tools</li>
@@ -134,7 +164,6 @@ export default function Services() {
               <Link to="/mint-commerce" className="btn orange">
                 Explore
               </Link>
-
             </div>
 
             <div className="product-image">
@@ -143,6 +172,7 @@ export default function Services() {
           </div>
         </div>
       </section>
+      </div>
     </>
   );
 }
@@ -154,11 +184,13 @@ function ServiceCard({ icon, title, items }) {
         <Icon icon={icon} width="24" />
       </div>
       <h3>{title}</h3>
-      <ul>
+      <ul className="tick-list">
         {items.map((item, i) => (
-          <li key={i}>• {item}</li>
+          <li key={i}>{item}</li>
         ))}
       </ul>
     </div>
+    
   );
 }
+

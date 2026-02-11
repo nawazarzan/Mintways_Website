@@ -1,0 +1,32 @@
+/* Page wrapper */
+.automation-page {
+  min-height: 100vh;
+  background: #f9fcff;
+  padding-top: 80px; /* space for navbar */
+}
+
+/* Centered content container */
+.automation-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Prevent unwanted horizontal scroll */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive spacing */
+@media (max-width: 900px) {
+  .automation-page {
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .automation-page {
+    padding-top: 50px;
+  }
+}

@@ -1,0 +1,83 @@
+.ai-section {
+  padding: 90px 0;
+  background: #f9fcff;
+}
+
+.ai-section.light {
+  background: #ffffff;
+}
+
+.ai-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 24px;
+}
+
+.ai-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.ai-header.left {
+  text-align: left;
+}
+
+.ai-header h2 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.ai-header p,
+.ai-subtitle {
+  margin-top: 10px;
+  color: #64748b;
+  font-size: 16px;
+}
+
+.ai-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* CARD STYLE */
+.ai-card,
+.ai-step-card {
+  background: #eef4fb;
+  border-radius: 14px;
+  padding: 28px;
+}
+
+.ai-card h4,
+.ai-step-card h4 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #0f172a;
+}
+
+.ai-card p,
+.ai-step-card p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.ai-step-card span,
+.ai-card span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .ai-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ai-header.left {
+    text-align: center;
+  }
+}

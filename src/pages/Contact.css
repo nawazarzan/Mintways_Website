@@ -1,0 +1,26 @@
+/* Page wrapper */
+.contact-page {
+  min-height: 100vh;
+  background: #f5f7fa;
+  padding-top: 80px; /* space for navbar */
+}
+
+/* Optional container alignment */
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Responsive spacing */
+@media (max-width: 900px) {
+  .contact-page {
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-page {
+    padding-top: 50px;
+  }
+}

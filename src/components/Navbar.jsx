@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+
 import "./Navbar.css";
 import { FiSearch, FiChevronDown } from "react-icons/fi";
 import { Link, useLocation } from "react-router-dom";
@@ -52,7 +53,7 @@ function Navbar() {
           {/* INDUSTRIES */}
           <div className="menu-item">
             <button onClick={() => toggleMenu("industries")}>
-              Industries{" "}
+              Industries
               <FiChevronDown
                 className={`arrow ${
                   openMenu === "industries" ? "rotate" : ""
@@ -62,15 +63,39 @@ function Navbar() {
 
             {openMenu === "industries" && (
               <div className="dropdown">
-                <Link to="/healthcare">Healthcare</Link>
+                {/* <Link to="/healthcare">Healthcare</Link> */}
+                {/* <Link to="/industries/banking">Banking</Link> */}
+                <Link to="/industries/healthcare">Healthcare</Link>
+                {/* <Link to="/industries/retail">Retail</Link>
+                <Link to="/industries/manufacturing">Manufacturing</Link> */}
               </div>
             )}
           </div>
 
+          {/* PLATFORMS */}
+          {/* <div className="menu-item">
+            <button onClick={() => toggleMenu("platforms")}>
+              Platforms
+              <FiChevronDown
+                className={`arrow ${
+                  openMenu === "platforms" ? "rotate" : ""
+                }`}
+              />
+            </button> */}
+
+            {/* {openMenu === "platforms" && (
+              <div className="dropdown">
+                <Link to="/platforms/sap">SAP</Link>
+                <Link to="/platforms/salesforce">Salesforce</Link>
+                <Link to="/platforms/cloud">Cloud</Link>
+              </div> */}
+            {/* )} */}
+          {/* </div> */}
+
           {/* SOLUTIONS */}
           <div className="menu-item">
             <button onClick={() => toggleMenu("solutions")}>
-              Solutions{" "}
+              Solutions
               <FiChevronDown
                 className={`arrow ${
                   openMenu === "solutions" ? "rotate" : ""
@@ -80,18 +105,39 @@ function Navbar() {
 
             {openMenu === "solutions" && (
               <div className="dropdown">
-                <Link to="/solutions/ai">AI Solutions</Link>
-                <Link to="/solutions/automation">Automation</Link>
-                <Link to="/solutions/security">Cybersecurity</Link>
+                <Link to="/solutions/ai" onClick={() => setOpenMenu(null)}>
+                  AI Solutions
+                </Link>
+                <Link to="/solutions/automation" onClick={() => setOpenMenu(null)}>
+                  Automation
+                </Link>
+                
+                <Link
+                  to="/solutions/ai-landing"
+                  onClick={() => setOpenMenu(null)}
+                >
+                  AI Landing
+                </Link>
               </div>
             )}
           </div>
 
+          {/* CONTACT */}
+          <div className="menu-item">
+            <Link to="/contact">Contact Us</Link>
+          </div>
+          <div className="menu-item">
+            <Link to="/About">About Us</Link>
+          </div>
         </nav>
 
-        {/* SEARCH ICON */}
-        <div className="search">
+        {/* RIGHT SIDE */}
+        <div className="nav-right">
           <FiSearch className="search-icon" />
+
+          <Link to="/contact" className="get-started-btn">
+            Get Started
+          </Link>
         </div>
       </header>
     </div>

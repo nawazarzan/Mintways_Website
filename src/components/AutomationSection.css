@@ -1,0 +1,169 @@
+.automation-page {
+  font-family: sans-serif;
+  color: #1f2937;
+}
+
+/* HERO */
+.auto-hero {
+  text-align: center;
+  padding: 90px 20px;
+  background: #f5f7fb;
+}
+
+.auto-badge {
+  background: #e0ecff;
+  color: #2563eb;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.auto-hero h1 {
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.auto-hero p {
+  color: #6b7280;
+  max-width: 650px;
+  margin: auto;
+}
+
+.auto-buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: #2563eb;
+  color: white;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 1px solid #cbd5e1;
+}
+
+/* CAPABILITIES */
+.auto-capabilities {
+  text-align: center;
+  padding: 90px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.auto-capabilities p {
+  color: #6b7280;
+  max-width: 600px;
+  margin: auto;
+}
+
+.auto-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+
+.cap-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: left;
+  min-height: 220px;
+  /* height: 250px; */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.cap-icon {
+  width: 40px;
+  height: 40px;
+  background: #eef2ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.cap-tags span {
+  background: #f1f5f9;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+/* SPLIT SECTIONS */
+.auto-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  padding: 80px 6%;
+  align-items: center;
+}
+
+.auto-split.reverse {
+  grid-template-columns: 1fr 1fr;
+}
+
+.split-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.split-text p {
+  color: #6b7280;
+  margin: 15px 0;
+}
+
+.tick-list {
+  list-style: none;
+  padding: 0;
+}
+
+.tick-list li {
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.tick-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #22c55e;
+}
+
+/* CTA */
+.auto-cta {
+  text-align: center;
+  padding: 80px 20px;
+  background: #f5f7fb;
+}
+
+.auto-cta p {
+  color: #6b7280;
+  margin: 10px 0 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .auto-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .auto-split {
+    grid-template-columns: 1fr;
+  }
+}
