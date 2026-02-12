@@ -136,7 +136,6 @@
 .get-started-btn:hover {
   background: #1e4fd6;
 }
-
 /* ------------------ MOBILE DRAWER + HAMBURGER ------------------ */
 
 /* HAMBURGER BUTTON */
@@ -266,4 +265,9 @@
     font-size: 12px;
     margin-top: -2px;
   }
+}
+
+.menu a {
+  text-decoration: none;
+  color: inherit;
 }
