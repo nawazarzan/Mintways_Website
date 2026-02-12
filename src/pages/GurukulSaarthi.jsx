@@ -5,7 +5,7 @@ export default function GurukulSaarthi() {
     <div className="gurukul-page">
 
       {/* HERO */}
-      <section className="gurukul-hero">
+      <section className="gurukul-hero1">
         <h1>Digitally Transform Your Educational Institution</h1>
         <p>
           An intelligent, AI-enabled School ERP platform designed to modernize

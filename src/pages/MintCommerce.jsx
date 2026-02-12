@@ -44,36 +44,37 @@ export default function MintCommerce() {
         </div>
       </section>
 
-      {/* NEW: AI TRANSFORMATION SECTION */}
-      <section className="ai-transform">
-        <h2>AI Transformation in ERP Systems</h2>
-        <p className="ai-subtitle">Before vs After</p>
+      {/* NEW: ERP AI SECTION */}
+<section className="erp-ai-section">
+  <h2>AI Transformation in ERP Systems</h2>
+  <p className="erp-ai-subtitle">Before vs After</p>
 
-        <div className="ai-grid">
-          {/* Traditional ERP */}
-          <div className="ai-card traditional">
-            <h3>Traditional ERP</h3>
-            <ul>
-              <li>Manual Admissions</li>
-              <li>Traditional Attendance Tracking</li>
-              <li>Static Reports</li>
-              <li>Limited Parent Portal</li>
-            </ul>
-          </div>
+  <div className="erp-ai-container">
 
-          {/* AI Powered ERP */}
-          <div className="ai-card ai-powered">
-            <h3>AI-Powered ERP</h3>
-            <ul>
-              <li>Smart Admissions</li>
-              <li>AI Attendance Tracking</li>
-              <li>Predictive Analytics</li>
-              <li>Personalized Learning</li>
-              <li>AI Chatbots</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+    <div className="erp-ai-box erp-old">
+      <h3>Traditional ERP</h3>
+      <ul>
+        <li>Manual Admissions</li>
+        <li>Traditional Attendance Tracking</li>
+        <li>Static Reports</li>
+        <li>Limited Parent Portal</li>
+      </ul>
+    </div>
+
+    <div className="erp-ai-box erp-new">
+      <h3>AI-Powered ERP</h3>
+      <ul>
+        <li>Smart Admissions</li>
+        <li>AI Attendance Tracking</li>
+        <li>Predictive Analytics</li>
+        <li>Personalized Learning</li>
+        <li>AI Chatbots</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
 
       {/* CTA */}
       <section className="mint-cta">

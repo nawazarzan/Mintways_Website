@@ -60,7 +60,7 @@ export default function VitalSyncDetails() {
       <div style={{ background: "#f6faf8", color: "#0f172a" }}>
 
         {/* HERO */}
-        <section style={{ padding: "80px 0", background: "radial-gradient(circle at top, #e0f2ff, transparent 60%)" }}>
+        <section style={{ padding: "120px 0", background: "radial-gradient(circle at top, #e0f2ff, transparent 60%)" }}>
           <div className="vs-hero-grid" style={{ maxWidth: "1200px", margin: "auto" }}>
             
             <div>
