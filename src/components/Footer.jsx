@@ -10,16 +10,16 @@ function Footer() {
       <div className="footer-icons">
 
         <a
-          href="https://www.linkedin.com/company/mintways-technlogies-private-limited/posts/?feedView=all"
+          href="https://www.linkedin.com/company/mintways-technlogies-private-limited"
           target="_blank"
           rel="noopener noreferrer"
           className="icon"
-        >
+        > 
           <FaLinkedinIn />
         </a>
 
         <a
-          href="https://facebook.com/mintways"
+          href="https://www.facebook.com/profile.php?id=100094526083015"
           target="_blank"
           rel="noopener noreferrer"
           className="icon"
@@ -28,7 +28,7 @@ function Footer() {
         </a>
 
         <a
-          href="https://instagram.com/mintways"
+          href="#"
           target="_blank"
           rel="noopener noreferrer"
           className="icon"

@@ -114,7 +114,14 @@
   }
 
   .logo-card {
-    width: 200px;
+    width: 160px;
     margin: 0 auto; 
   }
+
+  .clients-container h2 
+  {
+    padding: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+}
 }

@@ -19,7 +19,7 @@ function ClientsSection() {
     <div className="clients-wrapper">
       <div className="clients-container">
         
-        <h2>Globally trusted by enterprises, SMEs, and tech companies</h2>
+        <h2>Globally Trusted by Enterprises, SMEs & Tech Companies</h2>
 
         <div className="logos-grid">
           {clients.map((logo, idx) => (

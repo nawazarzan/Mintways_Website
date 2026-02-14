@@ -89,3 +89,16 @@
     justify-content: center;
   }
 }
+
+
+/* Responsive */
+@media (max-width: 480px) {
+  .vital-features {
+    justify-content: center;
+  }
+
+  .vital-header p{
+    width: 350px;
+  }
+}
+  

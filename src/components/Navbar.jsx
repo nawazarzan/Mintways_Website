@@ -5,7 +5,7 @@ import { Link, useLocation } from "react-router-dom";
 
 function Navbar() {
   const [openMenu, setOpenMenu] = useState(null);
-  const [mobileOpen, setMobileOpen] = useState(false); // ⭐ ADD 1
+  const [mobileOpen, setMobileOpen] = useState(false);
   const location = useLocation();
 
   const toggleMenu = (menuName) => {
@@ -14,13 +14,13 @@ function Navbar() {
 
   useEffect(() => {
     setOpenMenu(null);
-    setMobileOpen(false); // ⭐ ADD 2
+    setMobileOpen(false);
   }, [location.pathname]);
 
   return (
     <header className="navbar">
 
-      {/* ⭐ INNER FIXED CONTAINER (1400px) */}
+      {/* INNER FIXED CONTAINER (1400px) */}
       <div className="navbar-inner">
 
         {/* LEFT LOGO */}
@@ -50,6 +50,23 @@ function Navbar() {
 
           <div className="menu-item">
             <Link to="/services">Services</Link>
+          </div>
+
+          <div className="menu-item">
+            <button onClick={() => toggleMenu("products")}>
+              Products
+              <FiChevronDown
+                className={`arrow ${openMenu === "products" ? "rotate" : ""}`}
+              />
+            </button>
+
+            {openMenu === "products" && (
+              <div className="dropdown">
+                <Link to="/gurukul-saarthi">Gurukul Saarthi</Link>
+                <Link to="/vital-sync">Vital Sync</Link>
+                <Link to="/mint-commerce">Mint-Commerce</Link>
+              </div>
+            )}
           </div>
 
           <div className="menu-item">
@@ -85,10 +102,6 @@ function Navbar() {
           </div>
 
           <div className="menu-item">
-            <Link to="/contact">Contact Us</Link>
-          </div>
-
-          <div className="menu-item">
             <Link to="/about">About Us</Link>
           </div>
         </nav>
@@ -98,7 +111,7 @@ function Navbar() {
           <FiSearch className="search-icon" />
           <Link to="/contact" className="get-started-btn">Get Started</Link>
 
-          {/* ⭐ ADD 3 — HAMBURGER BUTTON */}
+          {/* ADD 3 — HAMBURGER BUTTON */}
           <button className="hamburger" onClick={() => setMobileOpen(!mobileOpen)}>
             {mobileOpen ? <FiX size={45} /> : <FiMenu size={45} />}
           </button>
@@ -106,7 +119,7 @@ function Navbar() {
 
       </div>
 
-      {/* ⭐ ADD 4 — MOBILE DRAWER */}
+      {/* ADD 4 — MOBILE DRAWER */}
       <div className={`mobile-drawer ${mobileOpen ? "open" : ""}`}>
         <Link to="/" onClick={() => setMobileOpen(false)}>Home</Link>
         <Link to="/services" onClick={() => setMobileOpen(false)}>Services</Link>

@@ -8,7 +8,7 @@ function CertificationsSection() {
       <div className="cert-cards">
 
         <div className="cert-card">
-          <img src="/icons/ISO.png" alt="ISO Certified" />
+          <img src="/icons/ISO.png" className="cert-img3" alt="ISO Certified" />
         </div>
 
         <div className="cert-card">

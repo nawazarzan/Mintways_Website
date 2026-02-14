@@ -23,9 +23,9 @@ function SuccessStories() {
           <div className="img-box">
             <img src="/images/laptop.png" alt="" />
           </div>
-          <h3>Optimizing Asset Visibility with Smart Tracking Solutions</h3>
+          <h3>Optimizing Asset Visibility with Smart Tracking Solutions and Operational Efficiency</h3>
 
-          <Link to="/success/optimizing" className="readmore-btn">
+          <Link to="/success/optimizing" className="readmore-btn rrdmr-bt">
             Read More
           </Link>
         </div>

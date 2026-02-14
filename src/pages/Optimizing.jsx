@@ -9,48 +9,47 @@ import BusinessImpact from "../components/BusinessImpact.jsx";
 const healthcareImpact = [
   {
     title: "Operational Efficiency",
-    color: "#854CE7",
+    color: "#854CE7",                       
     items: [
-      "50–60% faster trademark & patent processing through workflow automation ",
-      "Drastic reduction in email/phone-based tasks",
-      "End-to-end online filing reduced paperwork and manual entry",
-      "Centralized platform improved team coordination and case handling speed"
+      "60–70% faster shipment processing with real-time tracking",
+      "Automated asset intake drastically reduced manual entry",
+      "Centralized dashboard boosted team coordination",
+      "Faster condition-based bid evaluation accelerated workflow"
     ]
   },
   {
     title: "Compliance & Process Accuracy",
     color: "#FF8A3C",
     items: [
-      "100% digital documentation of all filings and submissions",
-      "Automated validation reduced errors in forms and legal documents",
-      "Audit-ready records with centralized secure storage",
-      "Real-time compliance monitoring ensures every filing meets regulatory standards without manual oversight."
-      
+      "100% digital asset documentation with photos & barcodes",
+      "Automated defect & condition scoring reduced audit errors",
+      "Standardized asset intake improved data consistency",
+      "Secure centralized storage ensured audit-ready records"
     ]
   },
   {
     title: "Client Experience & Transparency",
     color: "#23B2D6",
     items: [
-      "Real-time application tracking improved visibility for clients",
-      "Online filing & payments made the process faster and easier",
-      "Automated notifications kept clients constantly updated",
-      "Improved care continuity through complete visit history and AI insights"
+      "Live shipment visibility improved trust & communication",
+      "Automated status updates kept stakeholders informed",
+      "Clear documentation reduced back-and-forth approvals",
+      "Photo-based defect reporting increased transparency"
     ]
   },
   {
     title: "Financial Performance",
     color: "#152B63",
     items: [
-      "30–40% higher revenue throughput due to faster processing",
-      "Faster payment cycles through integrated online payment gateway",
-      "Reduced operational cost by eliminating manual admin efforts",
-      "Higher case volume handled without hiring extra staff"
+      "Faster evaluation cycles improved resale turnaround",
+      "Automated processes reduced operational cost significantly",
+      "Higher shipment accuracy minimized financial losses",
+      "Improved bid pricing consistency increased profitability"
     ]
   }
 ];
 
-function SuccessTransforming() {
+function Optimizing() {
   return (
     <div className="success-layout">
 
@@ -58,14 +57,14 @@ function SuccessTransforming() {
       <CaseStudyHero
         title="Optimizing Asset Visibility with Smart Tracking Solutions"
         subtitle="A real-world success story from our legal automation projects."
-        imageSrc="/images/Automation.png"
+        imageSrc="/images/streamm.png"
       />
 
       {/* CLIENT OVERVIEW */}
       <OverviewCard
-        image="/images/trade.png"
+        image="/images/client1.png"
         title="Client Overview"
-        description="KAFILING LLC — Florida-based law offering trademark, patent, & design registration services across USA, Europe, UK, and India."
+        description="A global e-waste refurbishment company operating in 13 countries, specializing in refurbishing and recycling corporate electronic assets to drive sustainability."
       />
 
       {/* TWO CARDS SIDE BY SIDE */}
@@ -77,30 +76,34 @@ function SuccessTransforming() {
           labelColor="#0B6B57"
           items={[
             {
-              icon: "/images/Manuall.png",
-              title: "Manual Registration Workflow",
+              icon: "/images/shipment.png",
+              title: "Lack of Shipment Visibility",
               points: [
-                "Phone & email-based processing",
-                "Slow, inefficient, not scalable"
+                "Shipments tracked manually",
+                "Delays in knowing shipment status",
               ]
             },
             {
-              icon: "/images/copy.png",
-              title: "No Online Application Filing",
-              points: ["All applications filed manually with paperwork"]
-            },
-            {
-              icon: "/images/security.png",
-              title: "Lack of Online Payments",
-              points: [
-                "No secure online payment options",
+              icon: "/images/asset.png",
+              title: "Inefficient Asset Registration",
+              points: ["Led to claim rejections & delays",
+                "Manual entry caused errors",
               ]
             },
             {
-              icon: "/images/nottracking.png",
-              title: "No Application Tracking",
+              icon: "/images/documentation.png",
+              title: "Inaccurate Documentation",
               points: [
-                "No real-time status updates for clients",
+                "Barcode & serial number mismatches",
+                "Photos missing during inspections",
+              ]
+            },
+            {
+              icon: "/images/pricing.png",
+              title: "Slow Pricing & Evaluation",
+              points: [
+                "Bid price calculation was manual",
+                "Inconsistent pricing between branches",
               ]
             }
           ]}
@@ -112,34 +115,37 @@ function SuccessTransforming() {
           labelColor="#007BFF"
           items={[
             {
-              icon: "/images/insurance.png",
-              title: "Cloud-Based Automated Platform",
+              icon: "/images/real.png",
+              title: "Real-Time Shipment Tracking",
               points: [
-                "Online registration & filing",
-                "Secure online payments"
+                "GPS-based multi-location tracking",
+                "Live shipment status updates",
               ]
             },
             {
-              icon: "/images/ai.png",
-              title: "Real-Time Application Tracking",
+              icon: "/images/smart.png",
+              title: "Smart Asset Registration System",
               points: [
-                "Applicants receive live status updates"
+                "Barcode scanning for instant entry",
+                "Auto-capture of condition & defect images",
               ]
             },
             {
-              icon: "/images/daily.png",
-              title: "Secure Online Payments",
+              icon: "/images/centralized.png",
+              title: "Centralized Documentation Hub",
               points: [
-                "Integrated payment options for applicants"
+                "All asset data stored in one platform",
+                "Photos + barcode + metadata linked automatically",
               ]
             },
             {
-              icon: "/images/after.png",
-              title: "Workflow-Driven Admin Processing",
+              icon: "/images/automated.png",
+              title: "Automated Bid Price Evaluation",
               points: [
-                "Automated admin tasks & country-wise reports"
+                "AI-based condition scoring",
+                "Auto-calculated bid price suggestions",
               ]
-            }
+            },
           ]}
         />
 
@@ -155,4 +161,4 @@ function SuccessTransforming() {
   );
 }
 
-export default SuccessTransforming;
+export default Optimizing;

@@ -31,6 +31,11 @@
   height: auto;
 }
 
+.iso-img {
+  width: 120px;
+  height: auto;
+}
+
 .cert-card .cert-img2 {
   width: 90px;
   height: auto;
@@ -92,7 +97,7 @@
 /* RESPONSIVE — MOBILE (Medium)*/
 @media (max-width: 768px) {
   .cert-cards {
-    flex-wrap: wrap;       /* 2 rows */
+    flex-wrap: wrap;
     gap: 15px;
   }
 
@@ -121,7 +126,7 @@
 @media (max-width: 480px) {
   .cert-cards {
     flex-direction: column;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
   }
 
@@ -130,9 +135,22 @@
     height: 120px;
   }
 
-  .cert-card img {
-    width: 75px;
+  .cert-card .cert-img3 {
+    width: 45%;
   }
+
+  .cert-card .cert-img2 {
+    width: 35%;
+  }
+
+  .cert-card .cert-img1 {
+    width: 50%;
+  }
+
+  .cert-card .cert-img {
+    width: 60%;
+  }
+
 
   .flags-row {
     margin-top: 20px;
