@@ -113,7 +113,7 @@ function Navbar() {
 
           {/* ADD 3 — HAMBURGER BUTTON */}
           <button className="hamburger" onClick={() => setMobileOpen(!mobileOpen)}>
-            {mobileOpen ? <FiX size={45} /> : <FiMenu size={45} />}
+            {mobileOpen ? <FiX size={38} /> : <FiMenu size={38} />}
           </button>
         </div>
 

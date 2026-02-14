@@ -8,7 +8,7 @@
   z-index: 999;
 }
 
-/* ⭐ INNER CONTAINER 1400px */
+/* INNER CONTAINER 1400px */
 .navbar-inner {
   max-width: 1400px;
   width: 100%;
@@ -223,7 +223,7 @@
     display: block;
   }
 
-  /* 🔥 Perfect Center Align */
+  /* Perfect Center Align */
   .mobile-drawer {
     align-items: center;
     text-align: center;
@@ -250,7 +250,7 @@
 /* ---------------- SMALL MOBILE (550px) ---------------- */
 @media (max-width: 550px) {
   .navbar {
-    height: 95px;
+    height: 80px;
     padding: 0 15px;
   }
 
