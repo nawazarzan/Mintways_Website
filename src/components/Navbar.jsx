@@ -123,6 +123,7 @@ function Navbar() {
       <div className={`mobile-drawer ${mobileOpen ? "open" : ""}`}>
         <Link to="/" onClick={() => setMobileOpen(false)}>Home</Link>
         <Link to="/services" onClick={() => setMobileOpen(false)}>Services</Link>
+        
 
         <button className="drawer-item" onClick={() => toggleMenu("industries")}>
           Industries

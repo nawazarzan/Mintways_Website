@@ -1,27 +1,29 @@
-.hero-only-image {
+.hero-section {
+  position: relative;
   width: 100%;
-  max-width: 1400px;
-  height: 544.17px;
-  margin: 0 auto;
-
-
-  background-image: url("../images/video.png");
-  background-size: cover;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
+  height: 544px;
+  overflow: hidden;
 }
 
-/*Mobile Responsive Fix */
+/* Full screen background video */
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;     /* full viewport width */
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-  .hero-only-image {
+  .hero-section {
     height: 300px;
   }
 }
 
 @media (max-width: 480px) {
-  .hero-only-image {
-    height: 220px; 
+  .hero-section {
+    height: 220px;
   }
 }
