@@ -22,6 +22,8 @@ import SuccessTransforming from "./pages/SuccessTransforming.jsx";
 import Optimizing from "./pages/Optimizing";
 import Streamlining from "./pages/Streamlining";
 import ScrollToTop from "./components/ScrollToTop";
+import Insight from "./pages/Insight.jsx";
+import Privacy from "./pages/Privaccy.jsx";
 
 
 function App() {
@@ -52,8 +54,9 @@ function App() {
         <Route path="success/transforming" element={<SuccessTransforming />} /> 
         <Route path="success/optimizing" element={<Optimizing />} />
         <Route path="success/streamlining" element={<Streamlining />} />
+        <Route path="/insight" element={<Insight />} />
+        <Route path="/privacy" element={<Privacy />} />
 
-        {/* Healthcare yeh line add karney yahan par to hero mein problem arhey success mein */}
       </Routes>
 
       <Footer />

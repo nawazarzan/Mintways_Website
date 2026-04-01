@@ -4,7 +4,7 @@ function Hero() {
   return (
     <section className="hero-section">
       <video
-        src="/videos/mint.mp4"
+        src="/videos/mint1.mp4"
         autoPlay
         muted
         loop

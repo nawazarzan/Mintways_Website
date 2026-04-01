@@ -9,42 +9,30 @@ function WhyChooseMintways() {
       <div className="why-wrapper">
 
         <div className="why-card">
-          <h3>Business Assessment</h3>
+          <h3>Outcome-Focused Delivery</h3>
           <p>
-            Comprehensive assessments of operations, processes, and technology to uncover gaps,
-            reduce risk, and identify scalable modernization opportunities.
+            We focus on measurable business results — not just technical output -aligning every solution with your strategic goals, driving efficiency, improving performance, and delivering sustainable growth through data-driven decisions, continuous optimisation, and real, quantifiable impact that supports long-term business success.
           </p>
         </div>
 
         <div className="why-card">
-          <h3>Efficient Solutions</h3>
+          <h3>Agile & Transparent Approach</h3>
           <p>
-            Cost-effective, outcome-driven solutions aligned to business objectives, delivering
-            measurable ROI and long-term enterprise value.
+            Iterative development, clear communication and full project visibility at every stage — ensuring alignment, faster feedback cycles, reduced risk, and consistent progress toward delivering high-quality solutions that meet your business objectives efficiently and transparently.
           </p>
         </div>
 
         <div className="why-card">
-          <h3>Agile & Flexible</h3>
+          <h3>Experienced Engineering Team</h3>
           <p>
-            An agile, adaptive delivery approach that enables rapid response to changing market
-            conditions and evolving business needs.
+            Skilled specialists with proven expertise across modern technology stacks, delivering innovative, scalable, and secure solutions tailored to your business needs while maintaining high standards of quality, performance, and reliability.
           </p>
         </div>
 
         <div className="why-card">
-          <h3>Data Security</h3>
+          <h3>Long-Term Partnership</h3>
           <p>
-            Secure, compliant solutions designed to protect sensitive data, ensure regulatory
-            alignment, and maintain enterprise-wide trust.
-          </p>
-        </div>
-
-        <div className="why-card">
-          <h3>Client Support & Partnerships</h3>
-          <p>
-            Collaborative, long-term partnerships focused on operational insight, modernization,
-            and sustainable, data-driven growth.
+            We don’t just deliver projects — we build lasting relationships that support your growth, offering continuous guidance, proactive improvements, and dependable partnership to help your business adapt, scale, and succeed in a rapidly evolving digital landscape.
           </p>
         </div>
 

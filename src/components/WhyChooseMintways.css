@@ -20,7 +20,7 @@
   width: 1000px;
   margin: 0 auto;   
   display: grid;
-  grid-template-columns: repeat(5, 1fr);  /* 5 equal columns */
+  grid-template-columns: repeat(4, 1fr);  /* 5 equal columns */
   gap: 15px; /* correct spacing (Figma-like) */
 }
 

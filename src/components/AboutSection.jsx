@@ -59,11 +59,6 @@ export default function AboutSection() {
                 <h4>Professionalism</h4>
                 <p>Ownership, accountability, and excellence.</p>
               </div>
-
-              <div className="card">
-                <h4>Smooth Communication</h4>
-                <p>Clear, timely, and collaborative communication.</p>
-              </div>
             </div>
           </div>
 

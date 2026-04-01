@@ -6,6 +6,9 @@ import SuccessStories from "../components/SuccessStories.jsx";
 import WhyChooseMintways from "../components/WhyChooseMintways.jsx";
 import BannerSection from "../components/BannerSection.jsx";
 import CertificationsSection from "../components/CertificationsSection.jsx";
+import TrustedTechCards from "../components/TrustedTechCards.jsx";
+import WhatWeDo from "../components/WhatWeDo.jsx";
+import OurProcess from "../components/OurProcess.jsx";
 
 function Home() {
   return (
@@ -14,14 +17,23 @@ function Home() {
       {/* Hero */}
       <HeroSection />
 
+      {/* Trusted Tech Cards */}
+      <TrustedTechCards />
+
       {/* Clients */}
       <ClientsSection />
 
       {/* Success Stories */}
       <SuccessStories />
 
+      {/* What We Do */}
+      <WhatWeDo />
+
       {/* Why Choose Us */}
       <WhyChooseMintways />
+
+      {/* Our Process */}
+      <OurProcess />
 
       {/* Banner */}
       <BannerSection />

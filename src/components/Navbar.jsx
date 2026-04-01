@@ -70,6 +70,17 @@ function Navbar() {
           </div>
 
           <div className="menu-item">
+            <Link to="/insight">Insights</Link>
+          </div>
+
+
+
+
+          
+
+          
+
+          <div className="menu-item">
             <button onClick={() => toggleMenu("industries")}>
               Industries
               <FiChevronDown
@@ -108,8 +119,7 @@ function Navbar() {
 
         {/* RIGHT SIDE */}
         <div className="nav-right">
-          <FiSearch className="search-icon" />
-          <Link to="/contact" className="get-started-btn">Get Started</Link>
+          <Link to="/contact" className="get-started-btn">Contact Us</Link>
 
           {/* ADD 3 — HAMBURGER BUTTON */}
           <button className="hamburger" onClick={() => setMobileOpen(!mobileOpen)}>

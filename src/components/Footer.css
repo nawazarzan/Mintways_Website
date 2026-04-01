@@ -1,54 +1,121 @@
 .footer {
-  /* width: 1400px; */
-  max-width: 1400px;
-  width: 100%;
-  background: #4A90E2;   /* Blue color */
-  padding: 12px 40px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-family: "Inter", "Source Sans 3", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  background-color: #5d8cc1;
+  padding: 40px 60px;
   color: white;
+  margin: 0 auto;
+  max-width: 1400px;
+  margin-top: 10px;
   box-sizing: border-box;
 }
 
-/* Left Text */
-.footer-text {
-  font-size: 16px;
-  font-weight: 600;
+/* GRID */
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  align-items: start;
+  gap: 40px;
+}
+
+/* VERTICAL LINES */
+.footer-middle {
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  padding-left: 40px;
+}
+
+.footer-right {
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  padding-left: 40px;
+}
+
+/* LEFT TEXT */
+.footer-left p {
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 500px;
   margin: 0;
 }
 
-
-.footer-center-logo img {
-  height: 40px;
-  object-fit: contain;
+/* HEADINGS */
+.footer-middle h3,
+.footer-right h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
-/* Right Side Icons */
-.footer-icons {
+/* 2 COLUMN LINKS */
+.footer-links {
   display: flex;
-  align-items: center;
-  gap: 14px;
+  gap: 60px;
 }
 
-.icon {
-  width: 32px;
-  height: 32px;
-  background: white;
-  border-radius: 50%;
+/* LIST STYLE */
+.footer-links ul,
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  color: #4A90E2;
-  font-size: 16px;
+.footer-links li,
+.footer-right li {
+  margin-bottom: 12px;
   cursor: pointer;
-  transition: 0.3s;
+  font-size: 15px;
 }
 
-.icon:hover {
-  background: #e3e3e3;
+/* ICON + TEXT ALIGN */
+.footer-right li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ========================= */
+/*  LINK FIX + HOVER */
+/* ========================= */
+
+.footer-links a,
+.footer-right a {
+  text-decoration: none;   
+  color: white;
+  position: relative;
+}
+
+/* underline animation */
+.footer-links a::after,
+.footer-right a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+/* hover effect */
+.footer-links a:hover::after,
+.footer-right a:hover::after {
+  width: 100%;
+}
+
+/* keep icons white */
+.footer-right a svg {
+  color: white;
+}
+
+/* COPYRIGHT */
+.copyright {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* ========================= */
+/* 🔥 OPTIONAL ACTIVE LINK */
+/* ========================= */
+
+.footer-links a.active::after {
+  width: 100%;
 }

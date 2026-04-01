@@ -1,0 +1,155 @@
+/* HERO SECTION */
+.insights-hero {
+  width: 100%;
+  height: 375px;
+  background: url("/images/background.jpg") center/cover no-repeat;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+/* OVERLAY */
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+}
+
+/* HERO TEXT */
+.hero-content {
+  color: white;
+  margin-left: 80px;
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.hero-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+
+/* INSIGHTS SECTION */
+.insights {
+  width: 100%;
+  padding: 80px 80px;
+  background: #f5f7fb;
+
+  display: flex;
+  flex-direction: column;
+  gap: 80px; /* spacing control */
+}
+
+/* CARD */
+.insight-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+/* IMAGE */
+.insight-image {
+  flex-shrink: 0;
+}
+
+.insight-image img {
+  width: 500px;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+}
+
+/* TEXT CONTAINER */
+.insight-content {
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* TITLE */
+.insight-content h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  color: #1a1a1a;
+
+  text-align: left;
+  width: 100%;
+  max-width: 420px;
+  cursor: pointer;
+
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+
+  transition: 0.3s;
+}
+
+/* HOVER */
+.insight-content h3:hover {
+  text-decoration-color: black;
+  color: black;
+}
+
+/* BUTTON */
+.insight-content button {
+  background: #3b6fe6;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+/* BUTTON HOVER */
+.insight-content button:hover {
+  background: #2f5cd1;
+  transform: translateY(-2px);
+}
+
+/* REMOVE LINK DEFAULT STYLE */
+.insight-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .insight-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .insight-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-content {
+    margin-left: 40px;
+  }
+
+  .insights {
+    padding: 60px 20px;
+  }
+}
