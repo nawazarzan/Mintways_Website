@@ -3,7 +3,7 @@ import "./Insights.css";
 const insightsData = [
   {
     title: "Agentic AI in Healthcare diagnosis! Where to draw the line?",
-    img: "/images/Linked1.png",
+    img: "/images/Healthcare blog 1.jpeg",
     link: "https://www.linkedin.com/pulse/agentic-ai-healthcare-diagnosis-where-hdahc/",
   },
   {
@@ -13,7 +13,7 @@ const insightsData = [
   },
   {
     title: "Innovations and Technological Expertise in Healthcare",
-    img: "/images/Innovations.jpg",
+    img: "/images/AdobeStock_482955950.jpeg",
     link: "https://www.linkedin.com/pulse/innovations-technological-expertise-t5idc/?trackingId=XnHA3CQB0hNjAjAIQdsmIg%3D%3D",
   },
   {

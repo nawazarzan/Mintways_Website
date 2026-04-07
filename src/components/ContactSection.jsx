@@ -38,7 +38,7 @@ export default function ContactSection() {
 
           <div className="contact-image">
             <img
-              src="https://images.unsplash.com/photo-1497366216548-37526070297c"
+              src="images/contact us.jpeg"
               alt="Office"
             />
           </div>

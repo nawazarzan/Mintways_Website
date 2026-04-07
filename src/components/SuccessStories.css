@@ -49,6 +49,7 @@
   height: 100%;
   margin-top: -10px;
   object-fit: cover;
+  border-radius: 20px;
 }
 
 /* TEXT */
@@ -102,7 +103,7 @@
   }
 }
 
-/* ⭐ Mobile (1 Column) */
+/* Mobile (1 Column) */
 @media (max-width: 768px) {
   .content-wrapper {
     width: 100%;

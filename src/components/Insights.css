@@ -1,19 +1,19 @@
 /* HERO SECTION */
 .insights-hero {
   width: 100%;
-  height: 375px;
-  background: url("/images/background.jpg") center/cover no-repeat;
+  height: 315px;
+  background: url("/images/Insights Option 2.jpeg") center/cover no-repeat;
   position: relative;
   border-radius: 4px;
   overflow: hidden;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 /* OVERLAY */
 .overlay {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.35);
   display: flex;
   align-items: center;
 }

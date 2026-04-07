@@ -37,6 +37,7 @@
   width: 418px;
   height: 386px;
   object-fit: cover;
+  border-radius: 8px;
 }
 .service-itemm {
   display: flex;

@@ -41,6 +41,17 @@
   background: #f3f6fb;
 }
 
+.card h4 a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
 .container {
   max-width: 1200px;
   margin: auto;
@@ -122,6 +133,7 @@ h2 {
 /* IMAGES */
 .section-img {
   width: 100%;
+  height: 330px;
   border-radius: 10px;
 }
 

@@ -4,16 +4,19 @@ import { FiSearch, FiChevronDown, FiMenu, FiX } from "react-icons/fi";
 import { Link, useLocation } from "react-router-dom";
 
 function Navbar() {
-  const [openMenu, setOpenMenu] = useState(null);
+  const [openMenu, setOpenMenu] = useState({});
   const [mobileOpen, setMobileOpen] = useState(false);
   const location = useLocation();
 
-  const toggleMenu = (menuName) => {
-    setOpenMenu(openMenu === menuName ? null : menuName);
+  const toggleMenu = (menu) => {
+    setOpenMenu(prev => ({
+      ...prev,
+      [menu]: !prev[menu]
+    }));
   };
 
   useEffect(() => {
-    setOpenMenu(null);
+    setOpenMenu({});
     setMobileOpen(false);
   }, [location.pathname]);
 
@@ -48,69 +51,146 @@ function Navbar() {
             <Link to="/">Home</Link>
           </div>
 
+          {/* WHAT WE OFFER (MEGA MENU) */}
           <div className="menu-item">
-            <Link to="/services">Services</Link>
-          </div>
-
-          <div className="menu-item">
-            <button onClick={() => toggleMenu("products")}>
-              Products
+            <button onClick={() => toggleMenu("whatWeOffer")}>
+              What We Offer
               <FiChevronDown
-                className={`arrow ${openMenu === "products" ? "rotate" : ""}`}
+                className={`arrow ${openMenu.whatWeOffer ? "rotate" : ""}`}
               />
             </button>
 
-            {openMenu === "products" && (
+            {openMenu.whatWeOffer && (
+              <div className="dropdown mega-menu">
+
+                {/* LEFT SIDE */}
+                <div className="dropdown-left">
+
+                  <div className="dropdown-item">
+                    <button
+                      className={openMenu.active === "services" ? "active" : ""}
+                      onClick={() =>
+                        setOpenMenu(prev => ({ ...prev, active: "services" }))
+                      }
+                    >
+                      Services
+                    </button>
+                  </div>
+
+                  <div className="dropdown-item">
+                    <button
+                      className={openMenu.active === "solutions" ? "active" : ""}
+                      onClick={() =>
+                        setOpenMenu(prev => ({ ...prev, active: "solutions" }))
+                      }
+                    >
+                      Solutions
+                    </button>
+                  </div>
+
+                  <div className="dropdown-item">
+                    <button
+                      className={openMenu.active === "products" ? "active" : ""}
+                      onClick={() =>
+                        setOpenMenu(prev => ({ ...prev, active: "products" }))
+                      }
+                    >
+                      Products
+                    </button>
+                  </div>
+
+                </div>
+
+                {/* RIGHT SIDE */}
+                <div className="dropdown-right">
+
+                  {openMenu.active === "services" && (
+                    <>
+                      <Link to="/services">All Services</Link>
+                    </>
+                  )}
+
+                  {openMenu.active === "solutions" && (
+                    <>
+                      <Link to="/solutions/ai">AI Solutions</Link>
+                      <Link to="/solutions/automation">Automation</Link>
+                    </>
+                  )}
+
+                  {openMenu.active === "products" && (
+                    <>
+                      <Link to="/gurukul-saarthi">Gurukul Saarthi</Link>
+                      <Link to="/vital-sync">Vital Sync</Link>
+                      <Link to="/mint-commerce">Mint-Commerce</Link>
+                    </>
+                  )}
+
+                </div>
+
+              </div>
+            )}
+          </div>
+
+          {/* OLD MENU (UNCHANGED)
+          <div className="menu-item">
+            <Link to="/services">Services</Link>
+          </div> */}
+
+          {/* <div className="menu-item">
+            <button onClick={() => toggleMenu("products")}>
+              Products
+              <FiChevronDown
+                className={`arrow ${openMenu.products ? "rotate" : ""}`}
+              />
+            </button>
+
+            {openMenu.products && (
               <div className="dropdown">
                 <Link to="/gurukul-saarthi">Gurukul Saarthi</Link>
                 <Link to="/vital-sync">Vital Sync</Link>
                 <Link to="/mint-commerce">Mint-Commerce</Link>
               </div>
             )}
-          </div>
+          </div> */}
 
           <div className="menu-item">
             <Link to="/insight">Insights</Link>
           </div>
 
-
-
-
-          
-
-          
-
           <div className="menu-item">
+            <Link to="/success-stories">Success Stories</Link>
+          </div>
+
+          {/* <div className="menu-item">
             <button onClick={() => toggleMenu("industries")}>
               Industries
               <FiChevronDown
-                className={`arrow ${openMenu === "industries" ? "rotate" : ""}`}
+                className={`arrow ${openMenu.industries ? "rotate" : ""}`}
               />
             </button>
 
-            {openMenu === "industries" && (
+            {openMenu.industries && (
               <div className="dropdown">
                 <Link to="/industries/healthcare">Healthcare</Link>
               </div>
             )}
-          </div>
+          </div> */}
 
-          <div className="menu-item">
+          {/* <div className="menu-item">
             <button onClick={() => toggleMenu("solutions")}>
               Solutions
               <FiChevronDown
-                className={`arrow ${openMenu === "solutions" ? "rotate" : ""}`}
+                className={`arrow ${openMenu.solutions ? "rotate" : ""}`}
               />
             </button>
 
-            {openMenu === "solutions" && (
+            {openMenu.solutions && (
               <div className="dropdown">
                 <Link to="/solutions/ai">AI Solutions</Link>
                 <Link to="/solutions/automation">Automation</Link>
-                <Link to="/solutions/ai-landing">AI Landing</Link>
               </div>
             )}
-          </div>
+          </div> */}
 
           <div className="menu-item">
             <Link to="/about">About Us</Link>
@@ -121,7 +201,6 @@ function Navbar() {
         <div className="nav-right">
           <Link to="/contact" className="get-started-btn">Contact Us</Link>
 
-          {/* ADD 3 — HAMBURGER BUTTON */}
           <button className="hamburger" onClick={() => setMobileOpen(!mobileOpen)}>
             {mobileOpen ? <FiX size={38} /> : <FiMenu size={38} />}
           </button>
@@ -129,20 +208,16 @@ function Navbar() {
 
       </div>
 
-      {/* ADD 4 — MOBILE DRAWER */}
+      {/* MOBILE DRAWER (UNCHANGED) */}
       <div className={`mobile-drawer ${mobileOpen ? "open" : ""}`}>
         <Link to="/" onClick={() => setMobileOpen(false)}>Home</Link>
         <Link to="/services" onClick={() => setMobileOpen(false)}>Services</Link>
-        
 
         <button className="drawer-item" onClick={() => toggleMenu("industries")}>
           Industries
-          <FiChevronDown
-            className={`arrow ${openMenu === "industries" ? "rotate" : ""}`}
-          />
         </button>
 
-        {openMenu === "industries" && (
+        {openMenu.industries && (
           <div className="drawer-dropdown">
             <Link to="/industries/healthcare">Healthcare</Link>
           </div>
@@ -150,23 +225,17 @@ function Navbar() {
 
         <button className="drawer-item" onClick={() => toggleMenu("solutions")}>
           Solutions
-          <FiChevronDown
-            className={`arrow ${openMenu === "solutions" ? "rotate" : ""}`}
-          />
         </button>
 
-        {openMenu === "solutions" && (
+        {openMenu.solutions && (
           <div className="drawer-dropdown">
             <Link to="/solutions/ai">AI Solutions</Link>
             <Link to="/solutions/automation">Automation</Link>
-            <Link to="/solutions/ai-landing">AI Landing</Link>
           </div>
         )}
 
-        <Link to="/contact" onClick={() => setMobileOpen(false)}>Contact Us</Link>
-        <Link to="/about" onClick={() => setMobileOpen(false)}>About Us</Link>
-
-        <Link to="/contact" className="drawer-btn">Get Started</Link>
+        <Link to="/contact">Contact Us</Link>
+        <Link to="/about">About Us</Link>
       </div>
 
     </header>

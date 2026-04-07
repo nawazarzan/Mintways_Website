@@ -1,5 +1,6 @@
 import React from "react";
 import "./AboutSection.css";
+import { Link, useLocation } from "react-router-dom";
 
 export default function AboutSection() {
   return (
@@ -64,7 +65,7 @@ export default function AboutSection() {
 
           <div>
             <img
-              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71"
+              src="images/Our vision.jpeg"
               alt="Vision"
               className="section-img"
             />
@@ -110,7 +111,7 @@ export default function AboutSection() {
       <section className="section">
         <div className="container grid-2">
           <div>
-            <h2>Presence in Person</h2>
+            <h2>Global Presence</h2>
             <p className="text">
               We operate with a distributed, global-first mindset, supported by
               teams across key technology hubs.
@@ -118,40 +119,26 @@ export default function AboutSection() {
 
             <div className="cards-2">
               <div className="card">
-                <h4>Bengaluru</h4>
-                <p>Primary engineering and AI center.</p>
+                <h4>India</h4>
               </div>
 
               <div className="card">
-                <h4>Pune</h4>
-                <p>Product development and integrations.</p>
+                <h4><Link to="/ai-landing">Germany</Link></h4>
               </div>
 
               <div className="card">
-                <h4>Delhi NCR</h4>
-                <p>Enterprise clients and consulting.</p>
+                <h4>United States of America (USA)</h4>
               </div>
 
               <div className="card">
-                <h4>Patna</h4>
-                <p>Engineering operations and support.</p>
-              </div>
-
-              <div className="card">
-                <h4>Germany</h4>
-                <p>European enterprise automation.</p>
-              </div>
-
-              <div className="card">
-                <h4>United States</h4>
-                <p>Strategic partnerships and innovation.</p>
+                <h4>United Kingdom</h4>
               </div>
             </div>
           </div>
 
           <div>
             <img
-              src="https://images.unsplash.com/photo-1524661135-423995f22d0b"
+              src="images/Global presence.jpeg"
               alt="World map"
               className="section-img"
             />
@@ -164,7 +151,7 @@ export default function AboutSection() {
         <div className="container grid-2 reverse">
           <div>
             <img
-              src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+              src="images/our people.jpeg"
               alt="Our People"
               className="section-img"
             />

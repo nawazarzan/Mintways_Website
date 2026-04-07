@@ -24,6 +24,8 @@ import Streamlining from "./pages/Streamlining";
 import ScrollToTop from "./components/ScrollToTop";
 import Insight from "./pages/Insight.jsx";
 import Privacy from "./pages/Privaccy.jsx";
+import SuccessStory from "./pages/SuccessStory.jsx";
+
 
 
 function App() {
@@ -46,7 +48,7 @@ function App() {
         <Route path="/mint-commerce" element={<MintCommerce />} />
         <Route path="/gurukul-saarthi" element={<GurukulSaarthi />} />
         <Route path="/solutions/ai" element={<AISolution />} />
-        <Route path="/solutions/ai-landing" element={<AILanding />} />
+        <Route path="ai-landing" element={<AILanding />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} /> 
         <Route path="/solutions/automation" element={<AutomationPage />} />
@@ -56,6 +58,7 @@ function App() {
         <Route path="success/streamlining" element={<Streamlining />} />
         <Route path="/insight" element={<Insight />} />
         <Route path="/privacy" element={<Privacy />} />
+        <Route path="/success-stories" element={<SuccessStory />} />
 
       </Routes>
 

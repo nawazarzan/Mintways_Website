@@ -5,7 +5,7 @@ import OverviewCard from "../components/OverviewCard.jsx";
 import ProblemSolutionCard from "../components/ProblemSolutionCard.jsx";
 import BusinessImpact from "../components/BusinessImpact.jsx";
 
-// ⭐ BUSINESS IMPACT DATA VIA PROPS (NO HARDCODE INSIDE COMPONENT)
+// BUSINESS IMPACT DATA VIA PROPS (NO HARDCODE INSIDE COMPONENT)
 const healthcareImpact = [
   {
     title: "Operational Efficiency",
