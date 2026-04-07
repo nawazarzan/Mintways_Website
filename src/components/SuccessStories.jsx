@@ -10,7 +10,7 @@ function SuccessStories() {
 
         <div className="card">
           <div className="img-box">
-            <img src="/images/doctor.png" alt="" />
+            <img src="/images/success stories - healthcare.jpeg" alt="" />
           </div>
           <h3>Transforming Healthcare Operations Through Digital Efficiency</h3>
 
@@ -21,7 +21,7 @@ function SuccessStories() {
 
         <div className="card">
           <div className="img-box">
-            <img src="/images/laptop.png" alt="" />
+            <img src="/images/success stories - asset tracking.jpeg" alt="" />
           </div>
           <h3>Optimizing Asset Visibility with Smart Tracking Solutions and Operational Efficiency</h3>
 
@@ -32,7 +32,7 @@ function SuccessStories() {
 
         <div className="card">
           <div className="img-box">
-            <img src="/images/tracker.png" alt="" />
+            <img src="/images/success stories - patent registration.jpeg" alt="" />
           </div>
           <h3>Streamlining Trademark & Patent Registration with Intelligent Automation</h3>
 

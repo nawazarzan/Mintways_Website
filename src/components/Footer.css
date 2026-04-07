@@ -113,9 +113,71 @@
 }
 
 /* ========================= */
-/* 🔥 OPTIONAL ACTIVE LINK */
+/*  OPTIONAL ACTIVE LINK */
 /* ========================= */
 
 .footer-links a.active::after {
   width: 100%;
+}
+
+
+@media (max-width: 992px) {
+  .footer {
+    padding: 30px 30px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr; /* 2 column */
+    gap: 30px;
+  }
+
+  /* remove extra spacing */
+  .footer-left p {
+    max-width: 100%;
+  }
+
+  /* remove vertical lines for better look */
+  .footer-middle {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .footer-right {
+    border-left: none;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    padding: 25px 20px;
+    text-align: center;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr; /* single column */
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .footer-links ul {
+    text-align: center;
+  }
+
+  .footer-right ul {
+    text-align: center;
+  }
+
+  .footer-right li {
+    justify-content: center;
+  }
+
+  .footer-middle h3,
+  .footer-right h3 {
+    margin-top: 20px;
+  }
 }

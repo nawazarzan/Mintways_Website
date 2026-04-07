@@ -226,6 +226,7 @@ function Navbar() {
         <button className="drawer-item" onClick={() => toggleMenu("solutions")}>
           Solutions
         </button>
+        
 
         {openMenu.solutions && (
           <div className="drawer-dropdown">
