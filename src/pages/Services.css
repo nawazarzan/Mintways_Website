@@ -1,6 +1,8 @@
 /* ================= GLOBAL ================= */
-/* PAGE WRAPPER */
+
 .services-page {
+  max-width: 1400px;
+  margin: 0 auto;
   width: 100%;
   min-height: 100vh;
   background: #ffffff;
@@ -11,10 +13,12 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .section {
   padding: 60px 0;
+  margin-top: 40px;
 }
 
 .container {
@@ -41,7 +45,6 @@ body {
   gap: 60px;
 }
 
-/* LEFT SIDE */
 .hero-left {
   flex: 1;
   max-width: 560px;
@@ -60,7 +63,6 @@ body {
   margin-bottom: 30px;
 }
 
-/* RIGHT SIDE */
 .hero-right {
   flex: 1;
   display: flex;
@@ -70,6 +72,7 @@ body {
 .hero-right img {
   width: 100%;
   max-width: 520px;
+  height: auto;
   border-radius: 18px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
 }
@@ -85,11 +88,14 @@ body {
   margin-bottom: 16px;
 }
 
+
+
 /* ================= SERVICES ================= */
 
 .bg-muted {
   background: #f1f5f9;
-  margin: 13px;
+  padding: 60px 0;
+  margin-top: 40px;
 }
 
 .grid-3 {
@@ -100,9 +106,15 @@ body {
 
 .service-card {
   background: white;
-  border: 12px solid #e2e8f0;
+  border: 1px solid #e2e8f0;
   padding: 24px;
   border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
 .service-icon {
@@ -117,7 +129,7 @@ body {
   margin-bottom: 12px;
 }
 
-/* ================= TICK LIST (GLOBAL) ================= */
+/* ================= TICK LIST ================= */
 
 .tick-list {
   list-style: none;
@@ -191,6 +203,7 @@ body {
   border-radius: 8px;
   border: none;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .btn.primary {
@@ -206,6 +219,11 @@ body {
 .btn.orange {
   background: #ea580c;
   color: white;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
 }
 
 /* ================= RESPONSIVE ================= */
@@ -228,11 +246,25 @@ body {
 
   .hero-left h1 {
     font-size: 40px;
+    text-align: center;
+  }
+
+  .product-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .product-row.reverse {
+    flex-direction: column;
   }
 }
 
 @media (max-width: 600px) {
   .grid-3 {
     grid-template-columns: 1fr;
+  }
+
+  .hero-left h1 {
+    font-size: 32px;
   }
 }

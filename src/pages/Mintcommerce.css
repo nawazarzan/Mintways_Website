@@ -1,6 +1,8 @@
 .mint-page {
   background: #f5f9ff;
   color: #0f172a;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 /* HERO */
@@ -148,13 +150,13 @@
   margin-bottom: 40px;
 }
 
-.ai-grid {
+.ai-grid-a {
   max-width: 1000px;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  margin-right: 69px;
+  /* margin-right: 69px; */
 }
 
 .ai-card {
@@ -188,7 +190,7 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .ai-grid {
+  .ai-grid-a {
     grid-template-columns: 1fr;
   }
 }

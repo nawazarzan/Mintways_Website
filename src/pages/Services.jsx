@@ -91,16 +91,16 @@ export default function Services() {
       </section>
 
       {/* PRODUCTS */}
-      <section className="section">
-        <div className="container text-center">
+      {/* <section className="section"> */}
+        {/* <div className="container text-center">
           <span className="badge">Our Products</span>
           <h2>Specialized Product Suite</h2>
           <p>AI-enabled platforms driving industry transformation.</p>
-        </div>
+        </div> */}
 
-        <div className="container product-block">
+        {/* <div className="container product-block"> */}
           {/* Gurukul Saarthi */}
-          <div className="product-row">
+          {/* <div className="product-row">
             <div className="product-text">
               <h3>Gurukul Saarthi</h3>
               <p>
@@ -121,10 +121,10 @@ export default function Services() {
             <div className="product-image">
               <img src="/images/school-erp.png" alt="School ERP" />
             </div>
-          </div>
+          </div> */}
 
           {/* Vital Sync */}
-          <div className="product-row reverse">
+          {/* <div className="product-row reverse">
             <div className="product-text">
               <h3>Vital Sync</h3>
               <p>
@@ -145,10 +145,10 @@ export default function Services() {
             <div className="product-image">
               <img src="/images/clinic-system.png" alt="Clinic System" />
             </div>
-          </div>
+          </div> */}
 
           {/* Mint-Commerce */}
-          <div className="product-row">
+          {/* <div className="product-row">
             <div className="product-text">
               <h3>Mint-Commerce</h3>
               <p>
@@ -169,9 +169,9 @@ export default function Services() {
             <div className="product-image">
               <img src="/images/ecommerce.png" alt="Ecommerce" />
             </div>
-          </div>
-        </div>
-      </section>
+          </div> */}
+        {/* </div> */}
+      {/* </section> */}
       </div>
     </>
   );

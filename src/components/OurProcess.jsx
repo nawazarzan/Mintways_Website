@@ -6,25 +6,25 @@ const processData = [
     title: "Discover",
     description:
       "We define your objectives, challenges and success metrics.",
-    image: "/images/Our process - Discover option 2.jpeg",
+    image: "/images/Our process - Discover option 2.jpg",
   },
   {
     title: "Design",
     description:
       "User-centred design and solution architecture tailored to your needs.",
-    image: "/images/Our process - Design.jpeg",
+    image: "/images/Our process - Design.jpg",
   },
   {
     title: "Develop",
     description:
       "Agile engineering with continuous testing and optimisation.",
-    image: "/images/Our process - Develop option 2.jpeg",
+    image: "/images/Our process - Develop option 2.jpg",
   },
   {
     title: "Deploy & Scale",
     description:
       "Secure deployment, performance monitoring and ongoing support.",
-    image: "/images/Our process - Deploy & Scale.jpeg",
+    image: "/images/Our process - Deploy & Scale.jpg",
   },
 ];
 

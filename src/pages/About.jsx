@@ -4,11 +4,9 @@ import AboutSection from "../components/AboutSection.jsx";
 
 function About() {
   return (
-    <div className="about-page">
       <div className="about-wrapper">
         <AboutSection />
       </div>
-    </div>
   );
 }
 

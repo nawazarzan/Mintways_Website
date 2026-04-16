@@ -35,7 +35,7 @@
   font-size: 16px;
 }
 
-.ai-grid {
+.ai-grid-d {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
@@ -73,7 +73,7 @@
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
-  .ai-grid {
+  .ai-grid-d {
     grid-template-columns: 1fr;
   }
 

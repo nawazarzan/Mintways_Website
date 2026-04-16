@@ -10,7 +10,7 @@ export default function AINativeDevelopment() {
           <p>Architecting for the era of generative intelligence.</p>
         </div>
 
-        <div className="ai-grid">
+        <div className="ai-grid-g">
           <div className="ai-card">
             <span>PHASE 01</span>
             <h4>Data Strategy</h4>

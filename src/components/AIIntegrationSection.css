@@ -1,6 +1,7 @@
 .ai-section {
   padding: 90px 0;
   background: #f9fcff;
+  
 }
 
 .ai-section.light {
@@ -35,7 +36,7 @@
   font-size: 16px;
 }
 
-.ai-grid {
+.ai-grid-b {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
@@ -73,7 +74,7 @@
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
-  .ai-grid {
+  .ai-grid-b{
     grid-template-columns: 1fr;
   }
 

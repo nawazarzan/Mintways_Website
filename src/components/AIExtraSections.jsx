@@ -66,7 +66,7 @@ export default function AIExtraSections() {
         <div className="ai-container">
           <h2 className="ai-center-title">Why Choose Our AI Approach</h2>
 
-          <div className="ai-grid">
+          <div className="ai-grid-c">
             <div className="ai-card">
               <h4>Enterprise Security</h4>
               <p>
@@ -94,19 +94,6 @@ export default function AIExtraSections() {
         </div>
       </section>
 
-      {/* CTA SECTION */}
-      <section className="ai-cta">
-        <div className="ai-container ai-cta-content">
-          <h2>Ready to Intelligentize Your Business?</h2>
-          <p>
-            Whether integrating into legacy systems or building the next big
-            thing, our AI experts are ready to help.
-          </p>
-          <Link to="/contact" className="ai-cta-btn">
-            Schedule a Consultation
-          </Link>
-        </div>
-      </section>
     </>
   );
 }

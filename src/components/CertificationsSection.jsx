@@ -8,20 +8,20 @@ function CertificationsSection() {
       <div className="cert-cards">
 
         <div className="cert-card">
-          <img src="/icons/ISO.png" className="cert-img3" alt="ISO Certified" />
+          <img src="/icons/ISO picture.png" className="cert-img3" alt="ISO Certified" />
         </div>
 
-        <div className="cert-card">
+        {/* <div className="cert-card">
           <img className="cert-img2" src="/icons/EGAC.png" alt="EGAC" />
-        </div>
+        </div> */}
 
         <div className="cert-card">
           <img className="cert-img" src="/icons/startup.png" alt="Startup India" />
         </div>
 
-        <div className="cert-card">
+        {/* <div className="cert-card">
           <img className="cert-img1" src="/icons/pyramid.png" alt="PYRAMID" />
-        </div>
+        </div> */}
 
       </div>
 

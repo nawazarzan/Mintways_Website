@@ -4,14 +4,14 @@ export default function GurukulSaarthi() {
   return (
     <div className="gurukul-page">
 
-      {/* HERO */}
+      {/* video */}
       <section className="gurukul-hero">
         <h1>Digitally Transform Your Educational Institution</h1>
         <p>
           An intelligent, AI-enabled School ERP platform designed to modernize
           educational administration and simplify academic workflows.
         </p>
-        <div className="hero-video">
+        <div className="hero-videos">
           <iframe
             src="https://www.youtube.com/embed/701XBqCJMnM?autoplay=1&mute=1&playsinline=1"
             title="Gurukul Saarthi Demo"
@@ -20,14 +20,6 @@ export default function GurukulSaarthi() {
 
           ></iframe>
         </div>
-
-
-
-        {/* <img
-          src="/images/school-erp.png"
-          alt="School ERP Dashboard"
-          className="hero-image"
-        /> */}
       </section>
 
       {/* INFO SECTION */}
@@ -46,6 +38,7 @@ export default function GurukulSaarthi() {
             monitoring, and seamless communication between administrators,
             teachers, students, and parents.
           </p>
+          <Link to="/contact"><button className="btn-primary">Start Free Trial</button></Link>
         </div>
 
         <div className="info-image">
@@ -75,16 +68,6 @@ export default function GurukulSaarthi() {
             text="Advanced analytics provide insights into student performance, attendance patterns, and learning outcomes."
           />
         </div>
-      </section>
-
-      {/* CTA */}
-      <section className="gurukul-cta">
-        <h2>Ready to modernize your campus?</h2>
-        <p>
-          Join hundreds of institutions transforming their administration with
-          Gurukul Saarthi.
-        </p>
-        <Link to="/contact"><button className="cta-btn">Schedule a Demo</button></Link>
       </section>
 
     </div>

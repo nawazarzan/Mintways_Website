@@ -9,7 +9,7 @@ import AIExtraSections from "../components/AIExtraSections";
 
 function AISolution() {
   return (
-    <main>
+    <main className="ai-solution-page">
       <Navbar /> 
       <SolutionHero />
       <AIIntegration />

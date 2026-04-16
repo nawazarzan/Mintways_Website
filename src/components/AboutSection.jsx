@@ -8,13 +8,13 @@ export default function AboutSection() {
 
       {/* HERO */}
       <section className="hero">
-  <div className="hero-inner">
-    <h1>Building Scalable Solutions</h1>
-    <p>
-      We combine deep technical expertise with a startup mindset to solve
-      real-world business problems through innovation, automation, and speed.
-    </p>
-  </div>
+        <div className="hero-inner">
+          <h1>Building Scalable Solutions</h1>
+          <p>
+            We combine deep technical expertise with a startup mindset to solve
+            real-world business problems through innovation, automation, and speed.
+          </p>
+        </div>
 </section>
 
 
@@ -65,7 +65,7 @@ export default function AboutSection() {
 
           <div>
             <img
-              src="images/Our vision.jpeg"
+              src="images/Our vision.jpg"
               alt="Vision"
               className="section-img"
             />
@@ -138,7 +138,7 @@ export default function AboutSection() {
 
           <div>
             <img
-              src="images/Global presence.jpeg"
+              src="images/Global presence.jpg"
               alt="World map"
               className="section-img"
             />
@@ -151,7 +151,7 @@ export default function AboutSection() {
         <div className="container grid-2 reverse">
           <div>
             <img
-              src="images/our people.jpeg"
+              src="images/our people.jpg"
               alt="Our People"
               className="section-img"
             />
@@ -187,7 +187,7 @@ export default function AboutSection() {
             </div>
 
             <p className="italic">
-              We don’t just build software—we build solutions that improve
+              We don’t just build software, we build solutions that improve
               the way businesses operate.
             </p>
           </div>

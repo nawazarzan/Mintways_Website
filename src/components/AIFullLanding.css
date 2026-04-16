@@ -196,6 +196,10 @@
   font-size: 14px;
 }
 
+.ai-cta .ai-cta-btn {
+  text-decoration: none;
+}
+
 /* RESPONSIVE */
 @media (max-width: 900px) {
   .hero-grid,

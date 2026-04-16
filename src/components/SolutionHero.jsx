@@ -25,7 +25,6 @@ export default function SolutionHero() {
           </p>
 
           <div className="solution-buttons">
-            <Link to="/services" className="btn-primary">Explore Solutions</Link>
             <Link to="/contact" className="btn-secondary">Talk to an Expert</Link>
           </div>
         </div>

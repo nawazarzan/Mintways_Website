@@ -103,16 +103,6 @@ export default function AutomationSection() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="auto-cta">
-        <h2>Ready to optimize your workflow?</h2>
-        <p>
-          Let us handle the repetitive tasks so your team can focus on
-          innovation. Schedule a free consultation today.
-        </p>
-        <button className="btn primary">Get a Free Consultation</button>
-      </section>
-
     </div>
   );
 }

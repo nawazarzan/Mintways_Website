@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect ,useRef } from "react";
 import "./Navbar.css";
 import { FiSearch, FiChevronDown, FiMenu, FiX } from "react-icons/fi";
 import { Link, useLocation } from "react-router-dom";
@@ -7,12 +7,21 @@ function Navbar() {
   const [openMenu, setOpenMenu] = useState({});
   const [mobileOpen, setMobileOpen] = useState(false);
   const location = useLocation();
+  const menuRef = useRef();   // ✅ SINGLE REF ONLY
 
   const toggleMenu = (menu) => {
-    setOpenMenu(prev => ({
-      ...prev,
-      [menu]: !prev[menu]
-    }));
+    setOpenMenu(prev => {
+      const updated = {
+        ...prev,
+        [menu]: !prev[menu],
+      };
+
+      if (menu === "solutions" || menu === "products") {
+        updated.whatWeOffer = true;
+      }
+
+      return updated;
+    });
   };
 
   useEffect(() => {
@@ -20,10 +29,22 @@ function Navbar() {
     setMobileOpen(false);
   }, [location.pathname]);
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setOpenMenu({});
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside); // ✅ FIXED
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+
   return (
     <header className="navbar">
 
-      {/* INNER FIXED CONTAINER (1400px) */}
       <div className="navbar-inner">
 
         {/* LEFT LOGO */}
@@ -46,14 +67,18 @@ function Navbar() {
         </div>
 
         {/* CENTER MENU */}
-        <nav className="menu">
+        <nav className="menu" ref={menuRef}>  {/* ✅ REF HERE ONLY */}
+
           <div className="menu-item">
             <Link to="/">Home</Link>
           </div>
 
-          {/* WHAT WE OFFER (MEGA MENU) */}
+          {/* WHAT WE OFFER */}
           <div className="menu-item">
-            <button onClick={() => toggleMenu("whatWeOffer")}>
+            <button onClick={(e) => {
+              e.stopPropagation();  // ✅ FIX
+              toggleMenu("whatWeOffer");
+            }}>
               What We Offer
               <FiChevronDown
                 className={`arrow ${openMenu.whatWeOffer ? "rotate" : ""}`}
@@ -63,26 +88,26 @@ function Navbar() {
             {openMenu.whatWeOffer && (
               <div className="dropdown mega-menu">
 
-                {/* LEFT SIDE */}
                 <div className="dropdown-left">
 
                   <div className="dropdown-item">
-                    <button
-                      className={openMenu.active === "services" ? "active" : ""}
-                      onClick={() =>
-                        setOpenMenu(prev => ({ ...prev, active: "services" }))
-                      }
+                    <Link
+                      to="/services"
+                      onClick={(e) => {
+                        e.stopPropagation(); // ✅ FIX
+                        setOpenMenu({});
+                      }}
                     >
                       Services
-                    </button>
+                    </Link>
                   </div>
 
                   <div className="dropdown-item">
                     <button
-                      className={openMenu.active === "solutions" ? "active" : ""}
-                      onClick={() =>
-                        setOpenMenu(prev => ({ ...prev, active: "solutions" }))
-                      }
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setOpenMenu(prev => ({ ...prev, active: "solutions" }));
+                      }}
                     >
                       Solutions
                     </button>
@@ -90,10 +115,10 @@ function Navbar() {
 
                   <div className="dropdown-item">
                     <button
-                      className={openMenu.active === "products" ? "active" : ""}
-                      onClick={() =>
-                        setOpenMenu(prev => ({ ...prev, active: "products" }))
-                      }
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setOpenMenu(prev => ({ ...prev, active: "products" }));
+                      }}
                     >
                       Products
                     </button>
@@ -101,57 +126,30 @@ function Navbar() {
 
                 </div>
 
-                {/* RIGHT SIDE */}
-                <div className="dropdown-right">
+                {openMenu.active && (
+                  <div className="dropdown-right">
 
-                  {openMenu.active === "services" && (
-                    <>
-                      <Link to="/services">All Services</Link>
-                    </>
-                  )}
+                    {openMenu.active === "solutions" && (
+                      <>
+                        <Link to="/solutions/ai">AI Solutions</Link>
+                        <Link to="/solutions/automation">Automation</Link>
+                      </>
+                    )}
 
-                  {openMenu.active === "solutions" && (
-                    <>
-                      <Link to="/solutions/ai">AI Solutions</Link>
-                      <Link to="/solutions/automation">Automation</Link>
-                    </>
-                  )}
+                    {openMenu.active === "products" && (
+                      <>
+                        <Link to="/gurukul-saarthi">Gurukul Saarthi</Link>
+                        <Link to="/vital-sync">Vital Sync</Link>
+                        <Link to="/mint-commerce">Mint-Commerce</Link>
+                      </>
+                    )}
 
-                  {openMenu.active === "products" && (
-                    <>
-                      <Link to="/gurukul-saarthi">Gurukul Saarthi</Link>
-                      <Link to="/vital-sync">Vital Sync</Link>
-                      <Link to="/mint-commerce">Mint-Commerce</Link>
-                    </>
-                  )}
-
-                </div>
+                  </div>
+                )}
 
               </div>
             )}
           </div>
-
-          {/* OLD MENU (UNCHANGED)
-          <div className="menu-item">
-            <Link to="/services">Services</Link>
-          </div> */}
-
-          {/* <div className="menu-item">
-            <button onClick={() => toggleMenu("products")}>
-              Products
-              <FiChevronDown
-                className={`arrow ${openMenu.products ? "rotate" : ""}`}
-              />
-            </button>
-
-            {openMenu.products && (
-              <div className="dropdown">
-                <Link to="/gurukul-saarthi">Gurukul Saarthi</Link>
-                <Link to="/vital-sync">Vital Sync</Link>
-                <Link to="/mint-commerce">Mint-Commerce</Link>
-              </div>
-            )}
-          </div> */}
 
           <div className="menu-item">
             <Link to="/insight">Insights</Link>
@@ -161,82 +159,93 @@ function Navbar() {
             <Link to="/success-stories">Success Stories</Link>
           </div>
 
-          {/* <div className="menu-item">
-            <button onClick={() => toggleMenu("industries")}>
-              Industries
-              <FiChevronDown
-                className={`arrow ${openMenu.industries ? "rotate" : ""}`}
-              />
-            </button>
-
-            {openMenu.industries && (
-              <div className="dropdown">
-                <Link to="/industries/healthcare">Healthcare</Link>
-              </div>
-            )}
-          </div> */}
-
-          {/* <div className="menu-item">
-            <button onClick={() => toggleMenu("solutions")}>
-              Solutions
-              <FiChevronDown
-                className={`arrow ${openMenu.solutions ? "rotate" : ""}`}
-              />
-            </button>
-
-            {openMenu.solutions && (
-              <div className="dropdown">
-                <Link to="/solutions/ai">AI Solutions</Link>
-                <Link to="/solutions/automation">Automation</Link>
-              </div>
-            )}
-          </div> */}
-
           <div className="menu-item">
             <Link to="/about">About Us</Link>
           </div>
+
         </nav>
 
-        {/* RIGHT SIDE */}
+        {/* RIGHT */}
         <div className="nav-right">
           <Link to="/contact" className="get-started-btn">Contact Us</Link>
 
           <button className="hamburger" onClick={() => setMobileOpen(!mobileOpen)}>
-            {mobileOpen ? <FiX size={38} /> : <FiMenu size={38} />}
+            {mobileOpen ? <FiX size={30} color="black" /> : <FiMenu size={30} />}
           </button>
         </div>
 
       </div>
 
-      {/* MOBILE DRAWER (UNCHANGED) */}
+      {/* MOBILE DRAWER (UNCHANGED - SAFE) */}
       <div className={`mobile-drawer ${mobileOpen ? "open" : ""}`}>
-        <Link to="/" onClick={() => setMobileOpen(false)}>Home</Link>
-        <Link to="/services" onClick={() => setMobileOpen(false)}>Services</Link>
 
-        <button className="drawer-item" onClick={() => toggleMenu("industries")}>
-          Industries
+        <Link to="/" className="drawer-main" onClick={() => setMobileOpen(false)}>
+          Home
+        </Link>
+
+        <button 
+          className="drawer-main" 
+          onClick={(e) => {
+            e.stopPropagation();
+            toggleMenu("whatWeOffer");
+          }}
+        >
+          What We Offer <FiChevronDown />
         </button>
 
-        {openMenu.industries && (
-          <div className="drawer-dropdown">
-            <Link to="/industries/healthcare">Healthcare</Link>
+        {openMenu.whatWeOffer && (
+          <div className="drawer-sub">
+
+            <Link to="/services" className="drawer-main">
+              Services
+            </Link>
+
+            <button 
+              className="drawer-main" 
+              onClick={(e) => {
+                e.stopPropagation();
+                toggleMenu("solutions");
+              }}
+            >
+              Solutions <FiChevronDown />
+            </button>
+
+            {openMenu.solutions && (
+              <div className="drawer-sub">
+                <Link to="/solutions/ai">AI Solutions</Link>
+                <Link to="/solutions/automation">Automation</Link>
+              </div>
+            )}
+
+            <button 
+              className="drawer-main" 
+              onClick={(e) => {
+                e.stopPropagation();
+                toggleMenu("products");
+              }}
+            >
+              Products <FiChevronDown />
+            </button>
+
+            {openMenu.products && (
+              <div className="drawer-sub">
+                <Link to="/gurukul-saarthi">Gurukul Saarthi</Link>
+                <Link to="/vital-sync">Vital Sync</Link>
+                <Link to="/mint-commerce">Mint-Commerce</Link>
+              </div>
+            )}
+
           </div>
         )}
 
-        <button className="drawer-item" onClick={() => toggleMenu("solutions")}>
-          Solutions
-        </button>
-        
+        <Link to="/insight" className="drawer-main">Insights</Link>
+        <Link to="/success-stories" className="drawer-main">Success Stories</Link>
+        <Link to="/about" className="drawer-main">About Us</Link>
 
-        {openMenu.solutions && (
-          <div className="drawer-dropdown">
-            <Link to="/solutions/ai">AI Solutions</Link>
-            <Link to="/solutions/automation">Automation</Link>
-          </div>
-        )}
+        <Link to="/contact" className="drawer-main contact-mobile">
+          Contact Us
+        </Link>
 
-        <Link to="/contact">Contact Us</Link>
-        <Link to="/about">About Us</Link>
       </div>
 
     </header>

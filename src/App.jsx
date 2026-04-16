@@ -25,6 +25,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Insight from "./pages/Insight.jsx";
 import Privacy from "./pages/Privaccy.jsx";
 import SuccessStory from "./pages/SuccessStory.jsx";
+import Producct from "./pages/Producct.jsx";
 
 
 
@@ -59,7 +60,7 @@ function App() {
         <Route path="/insight" element={<Insight />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/success-stories" element={<SuccessStory />} />
-
+        <Route path="/products" element={<Producct />} />
       </Routes>
 
       <Footer />

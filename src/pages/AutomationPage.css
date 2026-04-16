@@ -3,6 +3,8 @@
   min-height: 100vh;
   background: #f9fcff;
   padding-top: 80px; /* space for navbar */
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 /* Centered content container */

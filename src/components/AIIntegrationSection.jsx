@@ -15,30 +15,34 @@ export default function AIIntegrationSection() {
           </p>
         </div>
 
-        {/* CARDS */}
-        <div className="ai-grid">
-          <div className="ai-card">
-            <h4>Legacy Modernization</h4>
-            <p>
-              Inject intelligence into legacy codebases using wrapper APIs and
-              microservices architecture to enable predictive features.
-            </p>
-          </div>
+        {/* 🔥 NEW WRAPPER */}
+        <div className="ai-grid-wrapper">
+          <div className="ai-grid-b">
 
-          <div className="ai-card">
-            <h4>Automated Workflows</h4>
-            <p>
-              Connect disparate tools with AI agents that automate data entry,
-              processing, and decision-making across your current stack.
-            </p>
-          </div>
+            <div className="ai-card">
+              <h4>Legacy Modernization</h4>
+              <p>
+                Inject intelligence into legacy codebases using wrapper APIs and
+                microservices architecture to enable predictive features.
+              </p>
+            </div>
 
-          <div className="ai-card">
-            <h4>Data Enrichment</h4>
-            <p>
-              Enhance your existing databases with ML-driven insights,
-              categorization, and real-time anomaly detection.
-            </p>
+            <div className="ai-card">
+              <h4>Automated Workflows</h4>
+              <p>
+                Connect disparate tools with AI agents that automate data entry,
+                processing, and decision-making across your current stack.
+              </p>
+            </div>
+
+            <div className="ai-card">
+              <h4>Data Enrichment</h4>
+              <p>
+                Enhance your existing databases with ML-driven insights,
+                categorization, and real-time anomaly detection.
+              </p>
+            </div>
+
           </div>
         </div>
 

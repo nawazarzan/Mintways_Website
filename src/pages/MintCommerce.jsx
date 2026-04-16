@@ -4,6 +4,25 @@ export default function MintCommerce() {
   return (
     <div className="mint-page">
 
+
+      <section className="mint-hero">
+        <h1>Digitally Transform Your Online Business</h1>
+        <p>
+          An intelligent, AI-enabled eCommerce platform designed to modernize
+          online business operations and simplify management workflows.
+        </p>
+        <div className="hero-videos">
+          <iframe
+            src="https://www.youtube.com/embed/eMk10y--dpw?si=J0CJt6G-epKTrQJU&autoplay=1&mute=1&playsinline=1"
+            title="MintCommerce Demo"
+            frameBorder="0"
+            allow="autoplay; encrypted-media"
+
+          ></iframe>
+        </div>
+      </section>
+
+
       {/* HERO */}
       <section className="mint-hero">
         <span className="mint-badge">POWERFUL & FLEXIBLE</span>
@@ -20,7 +39,6 @@ export default function MintCommerce() {
 
         <div className="mint-buttons">
           <Link to="/contact"><button className="btn-primary">Start Free Trial</button></Link>
-          <button className="btn-outline">View Demo</button>
         </div>
       </section>
 
@@ -49,7 +67,7 @@ export default function MintCommerce() {
         <h2>AI Transformation in ERP Systems</h2>
         <p className="ai-subtitle">Before vs After</p>
 
-        <div className="ai-grid">
+        <div className="ai-grid-a">
           {/* Traditional ERP */}
           <div className="ai-card traditional">
             <h3>Traditional ERP</h3>
@@ -73,13 +91,6 @@ export default function MintCommerce() {
             </ul>
           </div>
         </div>
-      </section>
-
-      {/* CTA */}
-      <section className="mint-cta">
-        <h2>Ready to scale your business?</h2>
-        <p>Join thousands of merchants growing their revenue with Mint-Commerce.</p>
-         <Link to="/contact"><button className="btn-cta">Contact Us</button></Link>
       </section>
 
     </div>

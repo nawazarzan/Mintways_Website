@@ -25,6 +25,41 @@ export default function VitalSyncDetails() {
           gap: 20px;
         }
 
+        .vital-hero {
+          text-align: center;
+          padding: 70px 20px;
+        }
+
+        .vital-hero h1 {
+          font-size: 38px;
+          margin-bottom: 30px;
+        }
+
+        .vital-hero p {
+          max-width: 700px;
+          margin: auto;
+          color: #64748b;
+        }
+
+        .hero-videoo {
+          position: relative;
+          width: 100%;
+          max-width: 600px;   /* control video width */
+          margin: 0 auto;
+          padding-top: 56.25%; /* 16:9 aspect ratio */
+          margin-top: 100px;
+        }
+
+        .hero-videoo iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border: 0;
+          border-radius: 80px;
+        }
+
         @media (max-width: 900px) {
           .vs-hero-grid,
           .vs-detail-grid {
@@ -45,10 +80,31 @@ export default function VitalSyncDetails() {
           .vs-feature-grid {
             grid-template-columns: 1fr;
           }
-
-          h1 {
-            font-size: 28px !important;
+          .vital-hero h1 {
+            font-size: 26px;
           }
+          
+          .hero-videoo {
+            position: relative;
+            width: 100%;
+            max-width: 600px;   /* control video width */
+            margin: 0 auto;
+            padding-top: 56.25%; /* 16:9 aspect ratio */
+            margin-top: 100px;
+          }
+
+
+          .hero-videoo iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            border-radius: 10px;
+          }
+}
+
 
           .vs-buttons {
             flex-direction: column;
@@ -57,7 +113,23 @@ export default function VitalSyncDetails() {
         `}
       </style>
 
-      <div style={{ background: "#f6faf8", color: "#0f172a" }}>
+      <div style={{ background: "#f6faf8", color: "#0f172a" }} className="healthcare-layout">
+
+          {/* video */}
+        <section className="vital-hero">
+          <h1>Digitally Transform Your Healthcare Practice</h1>
+          <p>
+            An intelligent, AI-powered healthcare platform designed to streamline patient management, optimize appointments, and simplify clinical workflows.           </p>
+          <div className="hero-videoo">
+            <iframe
+              src="https://www.youtube.com/embed/AVGoKf3xd44?si=uDN9dWatv_8F8ab1&autoplay=1&mute=1&playsinline=1"
+              title="VitalSyncDetails Demo"
+              frameBorder="0"
+              allow="autoplay; encrypted-media"
+
+            ></iframe>
+          </div>
+        </section>
 
         {/* HERO */}
         <section style={{ padding: "80px 0", background: "radial-gradient(circle at top, #e0f2ff, transparent 60%)" }}>
@@ -78,13 +150,6 @@ export default function VitalSyncDetails() {
 
               <div className="vs-buttons" style={{ marginTop: "24px", display: "flex", gap: "16px" }}>
                 <Link to="/contact"><button style={btnPrimary}>Start Free Trial</button></Link>
-                <button style={btnOutline}>View Pricing</button>
-              </div>
-
-              <div style={{ display: "flex", gap: "40px", marginTop: "40px", justifyContent: "center" }}>
-                <Stat value="12k+" label="Clinics Trusted" />
-                <Stat value="99.9%" label="Uptime" />
-                <Stat value="24/7" label="Support" />
               </div>
             </div>
 
@@ -149,25 +214,11 @@ export default function VitalSyncDetails() {
                 <li>✔ Telehealth Integration</li>
               </ul>
 
-              <button style={{ ...btnPrimary, marginTop: "20px" }}>
-                Explore All Features
-              </button>
             </div>
           </div>
         </section>
 
-        {/* CTA */}
-        <section style={{ padding: "80px 0" }}>
-          <div style={{ maxWidth: "1200px", margin: "auto" }}>
-            <div style={{ background: "#38bdf8", color: "white", padding: "60px", borderRadius: "20px", textAlign: "center" }}>
-              <h2>Ready to upgrade your practice?</h2>
-              <p>Join over 12,000 healthcare providers.</p>
-              <Link to="/contact"><button style={{ background: "white", color: "#0284c7", padding: "14px 30px", borderRadius: "8px", border: "none" }}>
-                Get Started for Free
-              </button></Link>
-            </div>
-          </div>
-        </section>
+        
 
       </div>
     </>

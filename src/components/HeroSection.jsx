@@ -2,16 +2,11 @@ import "./Hero.css";
 
 function Hero() {
   return (
-    <section className="hero-section">
-      <video
-        src="/videos/mint1.mp4"
-        autoPlay
-        muted
-        loop
-        playsInline
-        style={{ width: "100%", height: "500px" }}
-      />
-    </section>
+    <div className="hero-video">
+      <video autoPlay muted loop playsInline>
+        <source src="/videos/mint1.mp4" type="video/mp4" />
+      </video>
+    </div>
   );
 }
 

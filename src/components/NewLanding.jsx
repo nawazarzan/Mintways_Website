@@ -189,32 +189,7 @@ export default function NewLanding() {
         </div>
       </section>
 
-      {/* CONSULTATION */}
-      <section className="section light">
-        <div className="container two-col">
-          <div>
-            <h2>Free AI & Automation Consultation</h2>
-            <ul className="bullet">
-              <li>Review of manual processes</li>
-              <li>Automation opportunities</li>
-              <li>Clear next-step recommendations</li>
-              <li>Option for in-person meeting in Germany</li>
-            </ul>
-          </div>
 
-          <div className="form-box">
-            <h3>Book Your Consultation</h3>
-            <form>
-              <input placeholder="Full Name" />
-              <input placeholder="Work Email" />
-              <input placeholder="Company Name" />
-              <button className="primary-btn">
-                Book Consultation
-              </button>
-            </form>
-          </div>
-        </div>
-      </section>
 
     </main>
   );

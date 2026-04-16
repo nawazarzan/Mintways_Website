@@ -12,7 +12,7 @@ export default function AIModernizationSteps() {
 </div>
 
 
-        <div className="ai-grid">
+        <div className="ai-grid-d">
           <div className="ai-step-card">
             <span>STEP 01</span>
             <h4>Audit & Mapping</h4>

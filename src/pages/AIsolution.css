@@ -1,5 +1,7 @@
 /* PAGE WRAPPER */
 .ai-solution-page {
+  max-width: 1400px;
+  margin: 0 auto;
   width: 100%;
   min-height: 100vh;
   background-color: #f9fcff;

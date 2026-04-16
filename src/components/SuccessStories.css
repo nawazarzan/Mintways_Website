@@ -87,6 +87,20 @@
   border: none;
 }
 
+.solution-buttons .btn-secondary{
+  display: inline-block;
+  text-decoration: none;
+  background: #347BEF;  /* green */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+
+}
+
 
 /* Tablet (2 Columns) */
 @media (max-width: 1024px) {

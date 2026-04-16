@@ -68,7 +68,7 @@
   margin-bottom: 40px;
 }
 
-.ai-grid {
+.ai-grid-c {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
@@ -114,7 +114,7 @@
     grid-template-columns: 1fr;
   }
 
-  .ai-grid {
+  .ai-grid-c {
     grid-template-columns: 1fr;
   }
 }

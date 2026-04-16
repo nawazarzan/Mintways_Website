@@ -21,7 +21,7 @@ function SuccessStories() {
 
         <div className="card">
           <div className="img-box">
-            <img src="/images/success stories - asset tracking.jpeg" alt="" />
+            <img src="/images/success stories - asset tracking.jpg" alt="" />
           </div>
           <h3>Optimizing Asset Visibility with Smart Tracking Solutions and Operational Efficiency</h3>
 
@@ -32,7 +32,7 @@ function SuccessStories() {
 
         <div className="card">
           <div className="img-box">
-            <img src="/images/success stories - patent registration.jpeg" alt="" />
+            <img src="/images/success stories - patent registration.jpg" alt="" />
           </div>
           <h3>Streamlining Trademark & Patent Registration with Intelligent Automation</h3>
 

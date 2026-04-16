@@ -1,6 +1,7 @@
 .trusted-tech {
   padding: 100px 0 100px;
-  background: #f4f6f9;
+  /* background: #f4f6f9; */
+   background: rgba(75, 143, 221, 0.14);
   margin-top: 30px;
 }
 
@@ -23,7 +24,8 @@
   margin: 0 auto 80px;
   font-size: 18px;
   line-height: 1.7;
-  color: #5f6f82;
+  /* color: #5f6f82; */
+  color: black;
 }
 
 .trusted-tech-cards {
@@ -31,6 +33,7 @@
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
+  
 }
 
 .trusted-tech-card {
@@ -41,7 +44,9 @@
   border-radius: 14px;
   font-size: 17px;
   font-weight: 600;
-  color: #243447;
+  /* color: #243447; */
+  color: #4a7ecb;
+  background-color: white;
   transition: all 0.3s ease;
 }
 
