@@ -1,0 +1,238 @@
+.homter-layout {
+  font-family: sans-serif;
+  color: #0f172a;
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+/* container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ================= HERO ================= */
+
+.homter-hero {
+  padding: 100px 20px;
+  background: radial-gradient(circle at top, #e0f2ff, transparent 60%);
+}
+
+.homter-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  text-align: left;
+}
+
+.badge {
+  background: #e0f2ff;
+  color: #0284c7;
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.heading {
+  font-size: 48px;
+  margin: 20px 0;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* hero paragraph */
+.subtext {
+  color: #64748b;
+  max-width: 500px;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.hero-img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+/* button */
+.btn-primary {
+  margin-top: 20px;
+  background: #2563eb;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+}
+
+/* ================= FEATURES ================= */
+
+.features {
+  padding: 100px 20px;
+  background: white;
+}
+
+.center {
+  text-align: center;
+}
+
+/* heading */
+.features h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* ✅ FIXED SUBTEXT */
+.features .subtext {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+/* grid */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* card */
+.feature-card {
+  background: #f1f5f9;
+  padding: 32px;
+  border-radius: 16px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.feature-card h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.feature-card p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* ================= DETAILS ================= */
+
+.details {
+  padding: 100px 20px;
+  background: #f8fafc;
+}
+
+.details h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* ✅ FIXED */
+.details .subtext {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+/* grid */
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+/* card */
+.info-card {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.info-card h4 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.info-card p {
+  font-size: 14px;
+  color: #64748b;
+  margin: 0;
+}
+
+/* ================= FINAL ================= */
+
+.final {
+  padding: 100px 20px;
+}
+
+.homter-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.detail-img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.list {
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.list li {
+  margin-bottom: 12px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+  .homter-hero-grid,
+  .homter-detail-grid,
+  .info-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+}

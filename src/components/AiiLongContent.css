@@ -1,0 +1,110 @@
+/* =========================
+   SECTION
+========================= */
+.aii-long-section {
+  background: #eef6ff;
+  padding: 100px 0;
+  margin-top: 40px;
+}
+
+/* =========================
+   CONTAINER (GRID)
+========================= */
+.aii-long-container {
+  max-width: 1306px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 80px;
+  align-items: start;
+}
+
+/* =========================
+   LEFT CONTENT
+========================= */
+.aii-long-left {
+  padding-right: 10px;
+}
+
+.aii-long-left p {
+  font-size: 14.5px;
+  line-height: 1.8;
+  color: #1f2937;
+  margin-bottom: 18px;
+}
+
+/* Bold text */
+.aii-long-left strong {
+  font-weight: 600;
+  color: #111827;
+}
+
+/* =========================
+   RIGHT SIDE (IMAGES)
+========================= */
+.aii-long-right {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  /* 🔥 Sticky effect */
+  position: sticky;
+  top: 120px;
+}
+
+/* IMAGE STYLE */
+.aii-long-right img {
+  width: 100%;
+  max-width: 472px;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  object-fit: cover;
+
+  /* subtle shadow for premium look */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .aii-long-container {
+    gap: 50px;
+  }
+
+  .aii-long-left p {
+    font-size: 14px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .aii-long-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  .aii-long-right {
+    position: static; /* sticky disable */
+  }
+
+  .aii-long-section {
+    padding: 60px 0;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .aii-long-left p {
+    font-size: 13.5px;
+    line-height: 1.7;
+  }
+
+  .aii-long-right img {
+    max-width: 100%;
+  }
+}

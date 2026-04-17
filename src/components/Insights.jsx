@@ -1,25 +1,26 @@
 import "./Insights.css";
+import { Link } from "react-router-dom";
 
 const insightsData = [
   {
     title: "Agentic AI in Healthcare diagnosis! Where to draw the line?",
     img: "/images/Healthcare blog 1.jpg",
-    link: "https://www.linkedin.com/pulse/agentic-ai-healthcare-diagnosis-where-hdahc/",
+    link: "/agentic-healthcare",
   },
   {
     title: "Building a Strong Work Culture in Startups: The First Few Years Matter Most",
     img: "/images/Building.png",
-    link: "https://www.linkedin.com/pulse/building-strong-work-culture-startups-bn6vc/?trackingId=8CXIm%2BskUZwpfuqQF5Vqiw%3D%3D",
+    link: "/building-insight",
   },
   {
     title: "Innovations and Technological Expertise in Healthcare",
     img: "/images/AdobeStock_482955950.jpg",
-    link: "https://www.linkedin.com/pulse/innovations-technological-expertise-t5idc/?trackingId=XnHA3CQB0hNjAjAIQdsmIg%3D%3D",
+    link: "/innovation-technology",
   },
   {
     title: "Future of software development in the LowCode NoCode paradigm",
     img: "/images/Future.png",
-    link: "https://www.linkedin.com/pulse/future-software-development-lowcode-ldwpc/?trackingId=4aL4kexZHGvKV5VgD%2Fjg%2Bw%3D%3D",
+    link: "/future-software",
   },
 ];
 
@@ -45,38 +46,24 @@ function Insights() {
           <div className="insight-card" key={index}>
             
             {/* IMAGE CLICKABLE */}
-            <a
-              href={item.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="insight-link"
-            >
+            <Link to={item.link} className="insight-link">
               <div className="insight-image">
                 <img src={item.img} alt={item.title} />
               </div>
-            </a>
+            </Link>
 
             {/* TEXT */}
             <div className="insight-content">
 
               {/* TITLE CLICKABLE */}
-              <a
-                href={item.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="insight-link"
-              >
+              <Link to={item.link} className="insight-link">
                 <h3>{item.title}</h3>
-              </a>
+              </Link>
 
               {/* BUTTON CLICKABLE */}
-              <a
-                href={item.link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Link to={item.link}>
                 <button>Explore</button>
-              </a>
+              </Link>
 
             </div>
 

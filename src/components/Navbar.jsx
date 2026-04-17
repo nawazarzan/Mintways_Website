@@ -141,6 +141,8 @@ function Navbar() {
                         <Link to="/gurukul-saarthi">Gurukul Saarthi</Link>
                         <Link to="/vital-sync">Vital Sync</Link>
                         <Link to="/mint-commerce">Mint-Commerce</Link>
+                        <Link to="/homter">Homter</Link>
+                        
                       </>
                     )}
 
@@ -232,6 +234,7 @@ function Navbar() {
                 <Link to="/gurukul-saarthi">Gurukul Saarthi</Link>
                 <Link to="/vital-sync">Vital Sync</Link>
                 <Link to="/mint-commerce">Mint-Commerce</Link>
+                <Link to="/homter">Homter</Link>
               </div>
             )}
 
@@ -253,3 +256,5 @@ function Navbar() {
 }
 
 export default Navbar;
+
+

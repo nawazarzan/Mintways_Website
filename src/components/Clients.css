@@ -1,50 +1,60 @@
-/* OUTER WRAPPER */
+
 .clients-wrapper {
   display: flex;
   justify-content: center;
-  margin: 0 auto;
-  /* padding: 30px 0; */
   width: 100%;
   background: #EFF6FF; 
   padding: 50px 40px;
   margin-top: 40px;
 }
 
-/* MAIN BOX */
 .clients-container {
-  padding: 50px 40px;
   text-align: center;
+  width: 100%;
 }
 
-/* HEADING */
 .clients-container h2 {
   color: #4B8FDD;
   font-family: "Inter", "Source Sans 3", "Roboto", "Helvetica Neue", Arial, sans-serif;
   font-size: 26px;
   font-weight: 600;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
 }
 
-/* LOGO GRID (RESPONSIVE) */
-.logos-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);  /* 5 per row */
-  gap: 20px;
-  justify-items: center;
+
+.slider {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 80px; /* space between rows */
+  padding: 30px 0;
 }
 
-/* INDIVIDUAL LOGO CARD */
+/* TRACK (FIXED - NO JERK) */
+.slide-track {
+  display: flex;
+  gap: 20px;    
+  width: max-content;  
+  animation: scroll 45s linear infinite;
+}
+
+/* REVERSE ROW */
+.slide-track.reverse {
+  animation: scroll-reverse 40s linear infinite;
+}
+
+/* LOGO CARD */
 .logo-card {
-  width: 170px;
-  height: 114px;
+  min-width: 250px;
+  height: 110px;
   background: #ffffff;
   border: 1px solid #d4dff2;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   padding: 15px;
-  transition: 0.3s;
   box-shadow: 0px 3px 8px rgba(0,0,0,0.06);
+  transition: 0.3s;
 }
 
 .logo-card:hover {
@@ -52,76 +62,64 @@
   box-shadow: 0px 7px 15px rgba(0,0,0,0.12);
 }
 
-/* LOGO IMAGE */
+/* IMAGE */
 .logo-card img {
-  width: 150px;
-  aspect-ratio: 3/2;
+  width: 130px;
   object-fit: contain;
 }
 
-/* --------------------------------------------------
-    ⭐ RESPONSIVE BREAKPOINTS — ONLY ADDITIONS ⭐
--------------------------------------------------- */
 
-/* ⭐ For screens below 1200px → 4 logos per row */
-@media (max-width: 1200px) {
-  .logos-grid {
-    grid-template-columns: repeat(4, 1fr); 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }
 
-/* ⭐ For screens below 992px → 3 logos per row */
-@media (max-width: 992px) {
-  .logos-grid {
-    grid-template-columns: repeat(3, 1fr); 
+@keyframes scroll-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
-/* ⭐ For screens below 768px → 2 logos per row */
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
 @media (max-width: 768px) {
   .clients-wrapper {
-    padding: 40px 20px; 
-  }
-
-  .clients-container {
-    padding: 30px 20px; 
+    padding: 40px 0px;
   }
 
   .clients-container h2 {
-    font-size: 22px;    
-  }
-
-  .logos-grid {
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 16px;                              
+    font-size: 22px;
   }
 
   .logo-card {
-    width: 150px;        
-    height: 100px;       
-    padding: 12px;       
+    min-width: 30px;
+    height: 70px;
+  }
+  .logo-card img {
+    width: 90px;
   }
 
-  .logo-card img {
-    width: 120px;       
+  .slide-track {
+    animation: scroll 30s linear infinite;
+  }
+
+  .slide-track.reverse {
+    animation: scroll-reverse 25s linear infinite;
   }
 }
 
-/* ⭐ For small mobile screens below 480px → 1 logo per row */
 @media (max-width: 480px) {
-  .logos-grid {
-    grid-template-columns: repeat(2, 1fr); 
-  }
-
-  .logo-card {
-    width: 160px;
-    margin: 0 auto; 
-  }
-
-  .clients-container h2 
-  {
-    padding: 15px;
+  .clients-container h2 {
     font-size: 18px;
     line-height: 1.5;
-}
+  }
 }

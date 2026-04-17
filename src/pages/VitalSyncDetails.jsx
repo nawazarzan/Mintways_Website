@@ -35,6 +35,13 @@ export default function VitalSyncDetails() {
           margin-bottom: 30px;
         }
 
+        .hero-headinggg {
+          font-size: 48px;
+          margin: 20px 0;
+          font-weight: 600;
+          line-height: 1.2;
+        }
+
         .vital-hero p {
           max-width: 700px;
           margin: auto;
@@ -82,6 +89,10 @@ export default function VitalSyncDetails() {
           }
           .vital-hero h1 {
             font-size: 26px;
+          }
+
+          .hero-headinggg {
+            font-size: 20px;
           }
           
           .hero-videoo {
@@ -140,10 +151,10 @@ export default function VitalSyncDetails() {
                 New Feature: AI Diagnosis Assist
               </span>
 
-              <h1 style={{ fontSize: "48px", margin: "20px 0" }}>
+              <h1 className="hero-headinggg">
                 Smart healthcare management for modern clinics.
               </h1>
-
+              
               <p style={{ color: "#64748b", maxWidth: "500px" }}>
                 Vital Sync streamlines patient billing, appointment scheduling, and record management with AI-powered services.
               </p>

@@ -1,47 +1,38 @@
-/* .hero-section {
-  position: relative;
-  width: 100%;
-  height: 544px;
-  overflow: hidden;
-} */
-
-/* Full screen background video */
+/* HERO VIDEO CONTAINER */
 .hero-video {
-  /* position: absolute; */
-  /* top: 0; */
-  /* left: 0; */
-  /* width: 100vw;     full viewport width */
-  /* height: 100%; */
-  /* object-fit: cover; */
   width: 100%;
-  height: 100vh; /* full screen height (optional) */
+  height: 450px;              /* 👈 adjust as needed */
   overflow: hidden;
   position: relative;
+  background: black;
 }
 
+/* VIDEO */
 .hero-video video {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* KEY: makes video fill full area */
+  object-fit: cover;          /* 👈 no black space */
+  object-position: 30% 60%; 
 }
 
-/* Responsive */
+/* TABLET */
 @media (max-width: 768px) {
   .hero-video {
-    width: 100%;
-    height: 70vh; /* 👈 full screen mat lo, better UX */
+    height: 300px;
   }
+
   .hero-video video {
-    object-position: center; /* 👈 important */
+    object-position: 50% 10%; /* 👈 mobile ke liye thoda aur upar */
   }
-  
 }
 
+/* MOBILE */
 @media (max-width: 480px) {
-  .hero-section {
+  .hero-video {
     height: 220px;
   }
-   .hero-video {
-    height: 60vh; /* 👈 aur compact */
+
+  .hero-video video {
+    object-position: 50% 5%;
   }
 }

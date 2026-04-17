@@ -23,11 +23,11 @@ function Home() {
       {/* Clients */}
       <ClientsSection />
 
-      {/* Success Stories */}
-      <SuccessStories />
-
       {/* What We Do */}
       <WhatWeDo />
+
+      {/* Success Stories */}
+      <SuccessStories />
 
       {/* Why Choose Us */}
       <WhyChooseMintways />

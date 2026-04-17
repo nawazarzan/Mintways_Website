@@ -151,6 +151,10 @@
     width: 60%;
   }
 
+  .cert-card .cert-imgg {
+    width: 35%;
+  }
+
 
   .flags-row {
     margin-top: 20px;

@@ -1,0 +1,94 @@
+.ai-container {
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  background: #f5f7fb;
+}
+
+/* HERO */
+.ai-hero {
+  background: linear-gradient(90deg, #0a0f3c, #0e4cb3);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.ai-hero h1 {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.ai-hero span {
+  display: block;
+  font-weight: 600;
+}
+
+/* SECTIONS */
+.ai-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  gap: 40px;
+}
+
+.ai-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.ai-text {
+  flex: 1;
+}
+
+.ai-text h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.ai-text h3 {
+  margin-top: 20px;
+}
+
+.ai-text p {
+  margin-bottom: 15px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.ai-text ul {
+  padding-left: 20px;
+}
+
+.ai-text li {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* IMAGE */
+.ai-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.ai-image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .ai-section {
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+
+  .ai-section.reverse {
+    flex-direction: column;
+  }
+
+  .ai-hero h1 {
+    font-size: 28px;
+  }
+}

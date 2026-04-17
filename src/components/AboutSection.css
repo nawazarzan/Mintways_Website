@@ -104,7 +104,14 @@
 .card p {
   font-size: 14px;
   color: #6b7280;
+  
 }
+
+.card a {
+  text-decoration: none; 
+  color: inherit;       
+}
+
 
 /* LIST */
 .lead-list {

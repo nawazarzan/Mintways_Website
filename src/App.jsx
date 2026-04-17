@@ -26,6 +26,12 @@ import Insight from "./pages/Insight.jsx";
 import Privacy from "./pages/Privaccy.jsx";
 import SuccessStory from "./pages/SuccessStory.jsx";
 import Producct from "./pages/Producct.jsx";
+import AgenticAISection from "./components/AgenticAISection.jsx";
+import Homter from "./pages/Homter.jsx";
+import BuildingInsight from "./pages/BuildingInsight.jsx";
+import AgenticHealthCare from "./pages/AgenticHealthCare.jsx";
+import InnovationTechnology from "./pages/InnovationTechnology.jsx";
+import FutureSoftware from "./pages/FutureSoftware.jsx";
 
 
 
@@ -61,6 +67,12 @@ function App() {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/success-stories" element={<SuccessStory />} />
         <Route path="/products" element={<Producct />} />
+        {/* <Route path="/agentic-ai-healthcare" element={<AgenticAISection />} /> */}
+        <Route path="/homter" element={<Homter />} />
+        <Route path="/building-insight" element={<BuildingInsight />} />
+        <Route path="/agentic-healthcare" element={<AgenticHealthCare />} />
+        <Route path="/innovation-technology" element={<InnovationTechnology />} />
+        <Route path="/future-software" element={<FutureSoftware />} />
       </Routes>
 
       <Footer />
