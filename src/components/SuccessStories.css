@@ -77,7 +77,7 @@
   display: inline-block;
   margin: 0 auto 30px auto;
   background: #347BEF;
-  color: #fff;
+  color: #fff !important; 
   padding: 10px 30px;
   font-size: 14px;
   border-radius: 30px;

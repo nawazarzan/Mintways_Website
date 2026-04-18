@@ -30,7 +30,7 @@ export default function NewLanding() {
           </div>
 
           <div className="hero-img">
-            <img src={AIImage} alt="AI automation" />
+            <img src="images/Germany page.jpeg" alt="AI automation" />
           </div>
         </div>
       </section>

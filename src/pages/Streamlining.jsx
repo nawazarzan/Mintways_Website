@@ -4,6 +4,7 @@ import CaseStudyHero from "../components/CaseStudyHero.jsx";
 import OverviewCard from "../components/OverviewCard.jsx";
 import ProblemSolutionCard from "../components/ProblemSolutionCard.jsx";
 import BusinessImpact from "../components/BusinessImpact.jsx";
+import ButtonLink from "../components/ButtonLink.jsx";
 
 // BUSINESS IMPACT DATA VIA PROPS (NO HARDCODE INSIDE COMPONENT)
 const healthcareImpact = [
@@ -58,7 +59,7 @@ function Streamlining() {
       <CaseStudyHero
         title="Streamlining Trademark & Patent Registration with Intelligent Automation"
         subtitle="An end-to-end asset management solution for a global e-waste refurbishment company."
-        imageSrc="/images/Automation.png"
+        imageSrc="/images/patent.jpeg"
       />
 
       {/* CLIENT OVERVIEW */}
@@ -145,11 +146,13 @@ function Streamlining() {
 
       </div>
 
-      {/* ⭐ BUSINESS IMPACT SECTION (NOW PROPS-DRIVEN & REUSABLE) */}
+      {/* REUSABLE) */}
       <BusinessImpact
         title="Business Impact"
         categories={healthcareImpact}
       />
+
+      <ButtonLink to="/contact" text="Request a Demo" center />
 
     </div>
   );

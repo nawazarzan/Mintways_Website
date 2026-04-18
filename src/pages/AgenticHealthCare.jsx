@@ -10,6 +10,7 @@ import AiiBestPractice from "../components/AiiBestPractice.jsx";
 import AiiCaseStudy from "../components/AiiCaseStudy.jsx";
 import AiiBusinessImpact from "../components/AiiBusinessImpact.jsx";
 import AiiLongContent from "../components/AiiLongContent.jsx";
+import ButtonLink from "../components/ButtonLink.jsx";
 
 
 import "./AgenticHealthCare.css";
@@ -30,6 +31,8 @@ function AgenticHealthCare() {
             {/* <AiiCaseStudy />
             <AiiBusinessImpact />
             <AiiLongContent /> */}
+            <ButtonLink to="/contact" text="Request a Demo" center />
+
         </div>   
     </>
   );

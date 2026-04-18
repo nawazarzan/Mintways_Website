@@ -1,0 +1,25 @@
+.btnn-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.btnn {
+  padding: 12px 28px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  background: #3b6eea;
+  color: #fff;
+
+  text-decoration: none; /* 👈 underline yahan remove hoga */
+  display: inline-block;
+}
+
+.btnn:hover {
+  background: #2f5edb;
+}

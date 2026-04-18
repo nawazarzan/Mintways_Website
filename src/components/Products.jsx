@@ -52,7 +52,7 @@ export default function Products() {
               <li>Doctor and staff portal</li>
             </ul>
             <Link to="/vital-sync" className="products-btn products-green">
-              Learn More
+              Know More
             </Link>
           </div>
 
@@ -76,7 +76,7 @@ export default function Products() {
               <li>Automated order workflows</li>
             </ul>
             <Link to="/mint-commerce" className="products-btn products-orange">
-              Explore
+              Know More
             </Link>
           </div>
 
@@ -85,6 +85,33 @@ export default function Products() {
           </div>
         </div>
 
+        {/* Homter */}
+        <div className="products-row products-reverse">
+
+          <div className="products-text">
+            <h3>Homter</h3>
+            <p>
+              A smart property management platform designed to simplify bookings,
+              staff operations, pricing, and property setup in one place.
+            </p>
+
+            <ul className="products-list">
+              <li>Centralized booking dashboard with real-time insights</li>
+              <li>Staff management with roles and shift scheduling</li>
+              <li>Flexible pricing and package control</li>
+              <li>Secure property setup and data management</li>
+            </ul>
+
+            <Link to="/homter" className="products-btn products-green">
+              Know More
+            </Link>
+          </div>
+
+        <div className="products-image">
+          <img src="/images/homterdevices.png" alt="Homter Dashboard" />
+        </div>
+
+        </div>
       </div>
     </section>
   );

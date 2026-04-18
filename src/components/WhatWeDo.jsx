@@ -50,7 +50,7 @@ const WhatWeDo = () => {
 
         <div className="cta-wrapper">
           <button className="cta-button">
-            <Link to="/contact" className="get-started-btnn">Explore Our Services</Link>
+            <Link to="/services" className="get-started-btnn">Explore Our Services</Link>
           </button>
         </div>
       </div>

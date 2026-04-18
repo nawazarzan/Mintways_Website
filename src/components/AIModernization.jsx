@@ -6,11 +6,10 @@ export default function AIModernizationSteps() {
       <div className="ai-container">
 
         <div className="ai-header">
-  <p className="ai-subtitle">
-    How we modernize your stack without rewriting code.
-  </p>
-</div>
-
+          <p className="ai-subtitle">
+            How we modernize your stack without rewriting code
+          </p>
+        </div>
 
         <div className="ai-grid-d">
           <div className="ai-step-card">

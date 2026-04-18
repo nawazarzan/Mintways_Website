@@ -99,7 +99,7 @@ export default function AboutSection() {
 
           <div>
             <img
-              src="https://images.unsplash.com/photo-1556761175-4b46a572b786"
+              src="images/leadership.jpeg"
               alt="Leadership"
               className="section-img"
             />

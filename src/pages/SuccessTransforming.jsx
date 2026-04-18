@@ -4,6 +4,7 @@ import CaseStudyHero from "../components/CaseStudyHero.jsx";
 import OverviewCard from "../components/OverviewCard.jsx";
 import ProblemSolutionCard from "../components/ProblemSolutionCard.jsx";
 import BusinessImpact from "../components/BusinessImpact.jsx";
+import ButtonLink from "../components/ButtonLink.jsx";
 
 // BUSINESS IMPACT DATA VIA PROPS (NO HARDCODE INSIDE COMPONENT)
 const healthcareImpact = [
@@ -151,6 +152,8 @@ function SuccessTransforming() {
         title="Business Impact"
         categories={healthcareImpact}
       />
+
+      <ButtonLink to="/contact" text="Request a Demo" center />
 
     </div>
   );

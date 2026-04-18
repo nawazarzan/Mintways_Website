@@ -23,7 +23,7 @@
 .services-gridd {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 120px;
+  column-gap: 20px;
   row-gap: 120px;
 }
 
@@ -138,7 +138,7 @@
   /* grid → single column */
   .services-gridd {
     grid-template-columns: 1fr !important;
-    row-gap: 60px;
+    row-gap: 50px;
   }
 
   /* image fix */

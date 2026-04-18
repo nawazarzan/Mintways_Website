@@ -49,22 +49,25 @@ export default function VitalSyncDetails() {
         }
 
         .hero-videoo {
-          position: relative;
           width: 100%;
-          max-width: 600px;   /* control video width */
-          margin: 0 auto;
-          padding-top: 56.25%; /* 16:9 aspect ratio */
-          margin-top: 100px;
-        }
+          max-width: 1800px;
+          height: 440px;
+          margin: 20px auto;
+          position: relative;
+          overflow: hidden;
+          border-radius: 16px;
+                }
 
         .hero-videoo iframe {
           position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
+          top: 50%;
+          left: 50%;
+
+          width: 60%;
+          height: 177.7%;
+
+          transform: translate(-50%, -50%);
           border: 0;
-          border-radius: 80px;
         }
 
         @media (max-width: 900px) {
@@ -96,22 +99,20 @@ export default function VitalSyncDetails() {
           }
           
           .hero-videoo {
-            position: relative;
             width: 100%;
-            max-width: 600px;   /* control video width */
-            margin: 0 auto;
-            padding-top: 56.25%; /* 16:9 aspect ratio */
-            margin-top: 100px;
+            max-width: 100%;          /* 👈 full width */
+            height: auto;
+            aspect-ratio: 16 / 9;     /* 👈 modern fix */
+            margin: 40px auto;
           }
 
 
           .hero-videoo iframe {
             position: absolute;
-            top: 0;
-            left: 0;
+            inset: 0;
             width: 100%;
             height: 100%;
-            border: 0;
+            transform: none; 
             border-radius: 10px;
           }
 }

@@ -4,6 +4,7 @@ import CaseStudyHero from "../components/CaseStudyHero.jsx";
 import OverviewCard from "../components/OverviewCard.jsx";
 import ProblemSolutionCard from "../components/ProblemSolutionCard.jsx";
 import BusinessImpact from "../components/BusinessImpact.jsx";
+import ButtonLink from "../components/ButtonLink.jsx";
 
 const healthcareImpact = [
   {
@@ -56,7 +57,7 @@ function Optimizing() {
       <CaseStudyHero
         title="Optimizing Asset Visibility with Smart Tracking Solutions"
         subtitle="A real-world success story from our legal automation projects."
-        imageSrc="/images/streamm.png"
+        imageSrc="/images/asset 2.jpeg"
       />
 
       {/* CLIENT OVERVIEW */}
@@ -155,6 +156,8 @@ function Optimizing() {
         title="Business Impact"
         categories={healthcareImpact}
       />
+
+      <ButtonLink to="/contact" text="Request a Demo" center />
 
     </div>
   );

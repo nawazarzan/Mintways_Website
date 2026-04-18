@@ -32,7 +32,7 @@ export default function ContactSection() {
             <div className="info-item">
               <FiPhone />
               <span>+91-80-42213489,
-                +91-9334061194,</span>
+                +91-9334061194</span>
             </div>
           </div>
 
